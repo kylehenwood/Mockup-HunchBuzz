@@ -1,0 +1,116 @@
+// checkbox
+
+.checkbox {
+  @include noselect;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding-left: 20px;
+}
+.checkbox__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+.checkbox__label {
+  font-size: 14px;
+  padding: 6px 12px;
+  line-height: 24px;
+}
+.checkbox__icon {
+  position: absolute;
+  z-index: 1;
+  padding: 8px 0;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 36px;
+  vertical-align: middle;
+
+  font-family: 'Flaticons Stroke';
+  font-weight: normal !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  &:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 16px;
+    border: 2px solid $color-grey-400;
+    border-radius: 4px;
+  }
+}
+
+.checkbox__input + .checkbox__icon {
+  &:before {
+    content: '';
+    background: white;
+  }
+}
+.checkbox__input:hover + .checkbox__icon {
+  &:before {
+    border-color: $color-grey-500;
+  }
+}
+.checkbox__input:active + .checkbox__icon {
+  &:before {
+    border-color: $color-pink-700;
+  }
+}
+.checkbox__input:checked + .checkbox__icon {
+  &:before {
+    content: '\e5a2';
+    background: $color-pink-500;
+    border-color: $color-pink-500;
+    color: white;
+  }
+}
+.checkbox__input:checked:hover + .checkbox__icon {
+  &:before {
+    background: $color-pink-300;
+  }
+}
+.checkbox__input:checked:active + .checkbox__icon {
+  &:before {
+    background: $color-pink-700;
+  }
+}
+
+
+
+
+
+// shockwave animation
+
+.checkbox__input:checked + .checkbox__icon {
+  &:after {
+    display: block;
+  }
+}
+
+.checkbox__icon:after {
+  content: '';
+  display: none;
+  position: absolute;
+  z-index: 0;
+  width: 16px;
+  height: 16px;
+  top: 10px;
+  left: 2px;
+  border-radius: 50%;
+  animation: checkbox-animation 320ms ease-out;
+}
+
+@keyframes checkbox-animation {
+  000% {
+    opacity: 0.4;
+    box-shadow: 0 0 0 0 $color-pink-500;
+  }
+  100% {
+    opacity: 0;
+    box-shadow: 0 0 0 16px $color-pink-500;
+  }
+}

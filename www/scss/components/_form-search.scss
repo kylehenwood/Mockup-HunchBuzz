@@ -1,0 +1,26 @@
+// search input
+.search-input {
+  position: relative;
+  height: 40px;
+}
+.search-input__icon {
+  position: absolute;
+  top:0;
+  left:0;
+  height: 40px;
+  width: 40px;
+  padding: 12px 10px 12px 14px;
+  pointer-events: none;
+}
+.search-input__input {
+  padding-left: 40px;
+}
+
+// autocomplete
+.search-input__autocomplete {
+  position: absolute;
+  top: 40px;
+}
+
+.search-autocomplete {}
+.search-autocomplete__result {}

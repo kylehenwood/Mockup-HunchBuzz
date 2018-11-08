@@ -1,0 +1,117 @@
+// header bar layout
+.header-layout {
+  height: 56px;
+  @include screen-mob {
+    display: none;
+  }
+}
+.header-layout__signup {
+  float: right;
+  width: 160px;
+  padding: 8px 0;
+  display: none;
+}
+
+.header-layout__logo {
+  float: left;
+  padding: 10px 0;
+}
+
+.header-logo {
+  @include noselect;
+  cursor: pointer;
+  transition: opacity 40ms linear;
+  position: relative;
+  height: 36px;
+  padding: 0 0 0 36px;
+  display: block;
+  opacity: 0.9;
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+
+
+.header-logo__text {
+  @include font-size(2);
+  display: block;
+  color: white;
+  padding: 0 12px;
+  line-height: 36px;
+  font-weight: 600;
+  font-family: $font-family;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.header-logo__mark {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 0;
+  top: 0;
+}
+
+
+// mark static
+.mark-static {
+  width: 36px;
+  height: 36px;
+  background-size: 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/logo/mark_36--white.png');
+  background-image: url('../images/logo/mark_36--white.svg');
+}
+
+
+// mark animated
+.mark-animated {
+  position: relative;
+  width: 36px;
+  height: 36px;
+}
+.mark-animated__ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.mark-animated__aperture {
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-position: 0 right;
+  background-image: url('../images/logo/mark_36-sprite--white.png');
+  background-image: url('../images/logo/mark_36-sprite--white.svg');
+  background-size: 720px 36px;
+  animation: mark-animated 560ms steps(19, end) infinite forwards;
+  animation-iteration-count: 1;
+}
+
+//-- animation
+@keyframes mark-animated {
+  000% {
+    //opacity: 0.4;
+    background-position: left 0;
+    transform: rotate(0);
+  }
+
+  072% {
+    transform: rotate(-24deg);
+  }
+
+  100% {
+    opacity: 1;
+    background-position: right 0;
+    transform: rotate(0);
+  }
+}

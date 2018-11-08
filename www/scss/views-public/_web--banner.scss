@@ -1,0 +1,74 @@
+.home-banner {
+  position: relative;
+  padding: 80px 24px 0;
+  overflow: hidden;
+  color: white;
+  @include screen-mob {
+    padding: 40px 24px 0;
+  }
+}
+
+.home-banner__shadow {
+  position: absolute;
+  z-index: 10;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(black, 0.2);
+}
+
+$banner-text-shadow: 0 1px 4px rgba(0,0,0,0.4);;
+
+.home-banner__title {
+  @include font-size(5.6);
+  text-shadow: $banner-text-shadow;
+  margin: 0 0 40px;
+  line-height: 1.2;
+  color: white;
+  text-align: center;
+  @include screen-mob {
+    @include font-size(3.2);
+    margin: 0 0 16px;
+  }
+}
+
+.home-banner__message {
+  @include font-size(2.2);
+  text-shadow: $banner-text-shadow;
+  line-height: 1.4;
+  color: white;
+  text-align: center;
+  @include screen-mob {
+    @include font-size(1.6);
+  }
+}
+
+
+.home-banner__mockup {
+  padding: 80px 0 0;
+  width: 100%;
+  @include screen-mob {
+    padding: 40px 0 0;
+  }
+}
+
+
+.banner-mockup {
+  max-width: 720px;
+  margin: 0 auto;
+  border-radius: 6px 6px 0 0;
+  box-shadow: 0 0 80px rgba(black,0.1),0 0 20px rgba(black,0.2 );
+}
+
+html.csstransitions {
+  .banner-mockup {
+    transition: all 480ms ease-out;
+    opacity: 0.6;
+    transform: translateY(120px);
+  }
+  .banner-mockup--animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

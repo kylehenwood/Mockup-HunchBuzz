@@ -1,0 +1,92 @@
+//-----
+// Mobile navigation
+//-----
+
+.header-mobile {
+  display: none;
+  height: 56px;
+  position: relative;
+  background: white;
+  @include screen-mob {
+    display: block;
+  }
+}
+.header-mobile--open {
+  height: auto;
+}
+
+
+// mobile navigation children
+.header-mobile__mark {
+  padding: 8px 0;
+  height: 56px;
+}
+
+
+.mobile-mark {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/logo/mark_36--black.png');
+  background-image: url('../images/logo/mark_36--black.svg');
+}
+
+
+// mobile navigation menu
+.header-mobile__menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 0;
+  height: 56px;
+}
+
+
+.menu-button {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  padding: 6px;
+  background: transparent;
+  color: white;
+  outline: none;
+  border: 2px solid rgba(white,0.8);
+}
+.menu-button--open {
+  background: $color-pink-700;
+}
+
+
+// mobile navigation
+.header-mobile__navigation {
+  display: none;
+  background: white;
+  border-top: 1px solid $color-grey-300;
+  padding: 0 0 24px;
+}
+
+.header-mobile__navigation--visible {
+  display: block;
+}
+
+.header-mobile__navigation-item {
+  @include font-size(1.6);
+  font-weight: 600;
+  display: block;
+  padding: 16px;
+  line-height: 20px;
+  border-bottom: 1px solid $color-grey-300;
+  color: $color-grey-700;
+  &:active {
+    background: $color-grey-200;
+  }
+  &:last-child {
+    border: none;
+  }
+}
+

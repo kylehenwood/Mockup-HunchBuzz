@@ -1,0 +1,24 @@
+// button patterns
+
+.button-pattern {
+  position: relative;
+  height: 40px;
+}
+
+.button-pattern--cancel-submit {}
+.button-pattern__cancel {
+  position: absolute;
+  top: 0;
+  right: 212px;
+  width: 120px;
+}
+.button-pattern__submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  //!todo remove this
+  .button {
+    margin: 0 0 4px;
+  }
+}

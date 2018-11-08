@@ -1,0 +1,352 @@
+//----------------
+// button creation
+//----------------
+
+.button {
+  @include noselect;
+  @include nowrap;
+  cursor: pointer;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  text-align: center;
+  border: 2px solid #000;
+  outline: none;
+  text-decoration: none;
+  &:focus {
+    //box-shadow: $shadow-hover;
+  }
+  //@include transition(box-shadow 80ms ease-in);
+  &:focus {}
+  &.button--hover,
+  &:hover {
+    box-shadow: $shadow-100;
+  }
+  &.button--active,
+  &:active {
+    box-shadow: $shadow-100;
+  }
+}
+
+
+// sizes
+
+//--28
+.button--28 {
+  font-size: 12px;
+  height: 28px;
+  line-height: 24px;
+  padding: 0 12px;
+}
+
+//--32
+.button--32 {
+  height: 32px;
+  line-height: 24px;
+  padding: 2px 12px;
+}
+.button--32-square {
+  height: 32px;
+  line-height: 24px;
+  padding: 2px;
+}
+
+//--36
+.button--36 {
+  height: 36px;
+  line-height: 24px;
+  padding: 4px 12px;
+}
+//--40
+.button--40 {
+  height: 40px;
+  line-height: 24px;
+  padding: 6px 16px;
+}
+.button--40-square {
+  height: 40px;
+  line-height: 24px;
+  padding: 6px;
+}
+
+//--48
+.button--48 {
+  height: 48px;
+  line-height: 24px;
+  padding: 8px 20px;
+}
+
+
+// mixins
+@mixin button-color ($standard,$light,$dark) {
+  color: white;
+  background: $standard;
+  border-color: $standard;
+  &.button--hover,
+  &:focus,
+  &:hover {
+    background: $light;
+  }
+  &.button--active,
+  &:active {
+    background: $dark;
+  }
+}
+
+@mixin button-color-stroke ($standard,$light,$dark) {
+  color: $dark;
+  background: transparent;
+  border-color: $standard;
+  &.button--hover,
+  &:focus,
+  &:hover {
+    color: $dark;
+    background: rgba(white,0.2);
+    border-color: $standard;
+  }
+  &.button--active,
+  &:active {
+    color: $dark;
+    border-color: $dark;
+  }
+}
+
+
+// colors
+
+//--white
+.button--white {
+  color: $text-black;
+  background: white;
+  border-color: $color-grey-400;
+  &:hover {
+    background: white;
+    border-color: $color-grey-500;
+  }
+  &.button--active,
+  &:active {
+    background: white;
+    border-color: $color-blue-500;
+  }
+}
+
+.button--white-stroke {
+  @include button-color-stroke (
+      rgba(white,0.6),
+      rgba(white,0.8),
+      rgba(white,1)
+  );
+}
+
+
+//--pink
+.button--pink {
+  @include button-color(
+      $color-pink-500,
+      $color-pink-300,
+      $color-pink-700
+  );
+}
+.button--pink-stroke {
+  @include button-color-stroke (
+      $color-pink-500,
+      $color-pink-300,
+      $color-pink-700
+  );
+}
+
+//--red
+.button--red {
+  @include button-color(
+      $color-red-500,
+      $color-red-300,
+      $color-red-700
+  );
+}
+.button--pink-stroke {
+  @include button-color-stroke (
+      $color-red-500,
+      $color-red-300,
+      $color-red-700
+  );
+}
+
+//--green
+.button--green {
+  @include button-color(
+      $color-green-500,
+      $color-green-300,
+      $color-green-700
+  );
+}
+.button--green-stroke {
+  @include button-color-stroke (
+      $color-green-500,
+      $color-green-300,
+      $color-green-700
+  );
+}
+
+//--blue
+.button--blue {
+  @include button-color(
+      $color-blue-500,
+      $color-blue-300,
+      $color-blue-700
+  );
+}
+.button--blue-stroke {
+  @include button-color-stroke (
+      $color-blue-500,
+      $color-blue-300,
+      $color-blue-700
+  );
+}
+
+//--purple
+.button--purple {
+  @include button-color(
+      $color-purple-500,
+      $color-purple-300,
+      $color-purple-700
+  );
+}
+.button--purple-stroke {
+  @include button-color-stroke (
+      $color-purple-500,
+      $color-purple-300,
+      $color-purple-700
+  );
+}
+//--cyan
+.button--cyan {
+  @include button-color(
+    $color-cyan-700,
+    $color-cyan-500,
+    $color-cyan-900
+  );
+}
+.button--cyan-stroke {
+  @include button-color-stroke (
+    $color-cyan-700,
+    $color-cyan-500,
+    $color-cyan-900
+  );
+}
+
+
+//--grey
+.button--grey {
+  @include button-color(
+      $color-grey-500,
+      $color-grey-400,
+      $color-grey-600
+  );
+}
+
+.button--grey-stroke {
+  color: $color-grey-700;
+  background: transparent;
+  border-color: $color-grey-400;
+  &.button--hover,
+  &:focus,
+  &:hover {
+    color: $color-grey-700;
+    border-color: $color-grey-400;
+  }
+  &.button--active,
+  &:active {
+    color: $color-grey-700;
+    background: white;
+    border-color: $color-grey-400;
+  }
+}
+
+
+
+//--disabled
+.button--disabled {
+  box-shadow: none!important;
+  cursor: not-allowed!important;
+  color: white!important;
+  border-color: $color-grey-400!important;
+  background: $color-grey-400!important;
+}
+
+
+
+// --add-remove
+.button--add-remove {
+  color: white;
+  background: $color-green-500;
+  border-color: $color-green-500;
+  &.button--hover,
+  &:focus,
+  &:hover {
+    background: $color-red-300;
+    border-color: $color-red-500;
+  }
+  &.button--active,
+  &:active {
+    background: $color-red-700;
+    border-color: $color-red-500;
+  }
+}
+
+
+
+
+
+
+
+//button__icon
+.button__icon {
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+}
+.button__icon--16 {
+  padding: 4px;
+}
+
+// button inner template
+.button-inner {
+  position: relative;
+  display: inline-block;
+}
+.button-inner--block {
+  display: block;
+}
+.button-inner--icon-after {
+  padding-right: 24px;
+}
+.button-inner--icon-before {
+  padding-left: 24px;
+}
+
+.button-inner__text {
+  line-height: 24px;
+  width: 100%;
+  @include nowrap;
+}
+.button-inner__icon-after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  padding: 4px 0 4px 8px;
+}
+.button-inner__icon-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  padding: 4px 8px 4px 0;
+}
+

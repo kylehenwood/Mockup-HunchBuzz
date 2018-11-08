@@ -1,0 +1,53 @@
+// credit card form
+.form-credit {
+  position: relative;
+  max-width: 360px;
+}
+.form-credit__number {
+  padding: 0 0 16px;
+}
+.form-credit__expiry {}
+
+.form-credit__ccv {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+}
+
+.credit-expiry {}
+.credit-expiry__year {
+  float: left;
+}
+.credit-expiry__month {
+  float: left;
+  padding: 0 12px 0 0;
+}
+
+.credit-expiry__label {
+  @extend .form-brick__label;
+}
+
+
+// --
+.credit-submit {
+  margin: 0 auto;
+  max-width: 240px;
+}
+
+
+
+// --
+.form-submit {
+  padding: 40px 0 0;
+}
+.form-submit__cancel {
+  padding: 0 12px 0 0;
+  max-width: 50%;
+  float: right;
+}
+.form-submit__submit {
+  max-width: 50%;
+  min-width: 200px;
+  float: right;
+}

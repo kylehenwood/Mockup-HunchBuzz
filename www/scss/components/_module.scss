@@ -1,0 +1,55 @@
+// module
+.module {
+  position: relative;
+  border-radius: 4px;
+  padding: 0 32px;
+  background: white;
+  box-shadow: $shadow-box;
+}
+.module--sidebar {
+  padding-left: 232px!important;
+}
+.module--margin {
+  margin: 0 0 16px;
+}
+.module--white {}
+
+.module--highlight {
+  border: 2px solid $color-pink-500;
+}
+
+.module--white-even {
+  border-radius: 4px;
+  padding: 16px 32px;
+  background: white;
+  box-shadow: $shadow-box;
+}
+
+// module__children
+.module__header {
+  padding: 16px 0 4px;
+  border-bottom: 1px solid $color-grey-300;
+}
+
+.module__controls {
+  padding: 24px 32px 0;
+}
+
+.heading-style {
+  color: $color-grey-900;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 4px 0;
+  font-size: 18px;
+}
+
+.module__body {
+  padding: 32px 0;
+}
+.module__body--margin {
+  margin: 0 0 24px;
+}
+.module__footer {
+  padding: 24px 0 32px;
+  border-top: 1px solid $color-grey-300;
+}

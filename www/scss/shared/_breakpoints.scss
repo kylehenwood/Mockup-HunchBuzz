@@ -1,0 +1,26 @@
+// _responsive breakpoints
+$breakpoint-1: 1120px;
+$breakpoint-2: 960px;
+$breakpoint-3: 720px;
+
+
+// _maximum width
+@mixin screen-max {
+  @media screen and (max-width:$breakpoint-1) {
+    @content;
+  }
+}
+
+// _medium width
+@mixin screen-med {
+  @media screen and (max-width:$breakpoint-2) {
+    @content;
+  }
+}
+
+// _mobile width
+@mixin screen-mob {
+  @media screen and (max-width:$breakpoint-3) {
+    @content;
+  }
+}

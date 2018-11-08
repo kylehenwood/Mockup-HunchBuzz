@@ -1,0 +1,18 @@
+// footer
+.footer {
+  position: relative;
+  padding: 12px 0;
+  color: $color-grey-600;
+  font-weight: 600;
+  @include font-size(1.6);
+}
+.footer__copyright {
+  float: left;
+  line-height: 32px;
+}
+.footer__social {
+  float: right;
+  @include screen-mob {
+    display: none;
+  }
+}

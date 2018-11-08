@@ -1,0 +1,7 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule SiteMap.html index.php?pageID=SiteMap
+
+# Make a generic rule
+RewriteRule ^([a-zA-Z]+)$ index.php?pageID=$1

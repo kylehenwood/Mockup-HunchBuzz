@@ -1,0 +1,91 @@
+// Icons
+// Using the flaticons stroke icon set
+@font-face {
+  font-family: 'Flaticons Stroke';
+  src: url('../fonts/flaticons-stroke/flaticons-stroke.eot');
+  src: url('../fonts/flaticons-stroke/flaticons-stroke.eot?#iefix') format("embedded-opentype"),
+       url('../fonts/flaticons-stroke/flaticons-stroke.woff') format('woff'),
+       url('../fonts/flaticons-stroke/flaticons-stroke.ttf') format('truetype'),
+       url('../fonts/flaticons-stroke/flaticons-stroke.svg#flaticons-stroke') format('svg');
+}
+
+@font-face {
+  font-family: 'Flaticons Social';
+  src: url('../fonts/flaticons-social/flaticons-social.eot');
+  src: url('../fonts/flaticons-social/flaticons-social.eot?#iefix') format("embedded-opentype"),
+  url('../fonts/flaticons-social/flaticons-social.woff') format('woff'),
+  url('../fonts/flaticons-social/flaticons-social.ttf') format('truetype'),
+  url('../fonts/flaticons-social/flaticons-social.svg#flaticons-social') format('svg');
+}
+
+//---
+
+.icon--16 {
+  &,&:before {
+    display: block;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+  }
+}
+
+//--
+
+
+.social-icon:before {
+  font-family: 'Flaticons Social';
+}
+
+.flat-icon:before {
+  font-family: 'Flaticons Stroke';
+}
+
+
+.flat-icon:before,
+.social-icon:before {
+  line-height: 1;
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: normal!important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+// social icons
+.icon--facebook:before {content:'\e7d0';}
+.icon--twitter:before {content:'\e7d1';}
+.icon--pinterest:before {content:'\e7d5';}
+.icon--googleplus:before {content:'\e7d9';}
+
+
+// -------------
+// Flat icons
+// -------------
+
+// codes
+.icon--arrow-up:before {content: '\e5b0';}
+.icon--arrow-down:before {content: '\e5b1';}
+.icon--arrow-left:before {content: '\e5b2';}
+.icon--arrow-right:before {content: '\e5b3';}
+.icon--cross:before {content: '\e5a3';}
+.icon--microscope:before {content: '\e45a';}
+.icon--menu:before {content: '\e53e';}
+.icon--maximize:before {content: '\e58e';}
+.icon--dropdown-arrow:before {content: '\e5a5';}
+
+
+.icon--trash:before {content: '\e481';}
+.icon--archive:before {content: '\e47a';}
+.icon--edit:before {content: '\e48a';}
+.icon--scan:before {content: '\e42e';}
+
+.icon--plus:before {content:'\e5a0';}
+.icon--minus:before {content:'\e5a1';}
+.icon--tick:before {content:'\e5a2';}
+
+.icon--circle-tick:before {content:'\e5b6';}
+.icon--circle-cross:before {content:'\e5b7';}

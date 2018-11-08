@@ -1,0 +1,159 @@
+// this will serve as a boilerplate typography style
+$font-family:"lato","Open Sans",Open-Sans,helvetica,arial;
+$font-family: "Open Sans",Open-Sans,helvetica,arial;
+$font-family-heading:"asap-bold","Open Sans",Open-Sans,helvetica,arial;
+$font-mono: consolas, monaco, courier, 'courier new';
+
+::-ms-clear  { width: 0; height: 0; }
+::-ms-reveal { width: 0; height: 0; }
+
+::selection {
+  color: $text-white;
+  background: $color-pink-500; /* WebKit/Blink Browsers */
+}
+
+//-- font control
+// font-size
+// make a font with @font-family with these? bold:semibold bla bla
+
+$fontsize-h1: 2.8;
+$fontsize-h2: 2.4;
+$fontsize-h3: 2;
+$fontsize-h4: 1.8;
+$fontsize-h5: 1.4;
+
+
+// font-size
+html {
+  font-size: 62.5%;
+}
+body {
+  @include font-size(1.4);
+  font-family: $font-family;
+  line-height: 1.2;
+  color: $text-black;
+  text-rendering: optimizeLegibility;
+}
+
+// setting defaults
+body,
+input,
+button {-webkit-font-smoothing: antialiased;}
+
+
+h1 {@include font-size($fontsize-h1);}
+h2 {@include font-size($fontsize-h2);}
+h3 {@include font-size($fontsize-h3);}
+h4 {@include font-size($fontsize-h4);}
+h5 {@include font-size($fontsize-h5);}
+
+
+@media (max-width: $breakpoint-3){
+  h1,.alpha   {@include font-size(3.2);}
+  h2,.beta    {@include font-size(2.4);}
+  h3,.gamma   {@include font-size(2.0);}
+  h4,.delta   {@include font-size(1.8);}
+  h5,.epsilon {@include font-size(1.6);}
+  h6,.zeta    {@include font-size(1.6);}
+}
+
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1.2;
+  font-family: $font-family;
+}
+
+
+// heading size
+.heading-size-1 {
+  @include font-size($fontsize-h1);
+}
+.heading-size-2 {
+  @include font-size($fontsize-h2);
+}
+.heading-size-3 {
+  @include font-size($fontsize-h3);
+}
+.heading-size-4 {
+  @include font-size($fontsize-h4);
+}
+.heading-size-5 {
+  font-weight: bold;
+  @include font-size($fontsize-h5);
+}
+
+em,
+.text-italic {
+  font-style:italic;
+}
+strong,
+.text-bold {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.link-primary {
+  color: $color-pink-500;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+  &:hover {
+    color: $color-pink-700;
+  }
+  &:active {
+    color: $color-pink-900;
+  }
+}
+
+
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.text-left {text-align: left;}
+.text-italic {font-style: italic;}
+
+.text-break {
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+code {
+  font-family: $font-mono;
+  line-height: inherit;
+  @include font-size(1.4);
+}
+
+pre {
+  display: block;
+  background: $color-grey-300;
+  border-radius: 4px;
+  font-family: $font-mono;
+  padding: 24px;
+  code {
+    padding: 2px 0!important;
+    display: block !important;
+  }
+}
