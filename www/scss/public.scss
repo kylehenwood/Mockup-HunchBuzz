@@ -33,23 +33,29 @@
 // _components
 @import "components/_typography";
 @import "components/_button";
-@import "components/_button-switch";
-@import "components/_button-pattern";
-@import "components/_dropdown";
-@import "components/_form";
-@import "components/_form-grid";
-@import "components/_form-search";
-@import "components/_form-credit";
-@import "components/_form-checkbox";
-@import "components/_switch";
-@import "components/_switch-control";
-@import "components/_breadcrumb";
-@import "components/_page-alert";
+// @import "components/_button-switch";
+// @import "components/_button-pattern";
+// @import "components/_dropdown";
+// @import "components/_form";
+// @import "components/_form-grid";
+// @import "components/_form-search";
+// @import "components/_form-credit";
+// @import "components/_form-checkbox";
+// @import "components/_switch";
+// @import "components/_switch-control";
+// @import "components/_breadcrumb";
+// @import "components/_page-alert";
 
 
 // _views
-@import "views-public/_web--banner";
-@import "views-public/_web--content";
-@import "views-public/_web--headline";
-@import "views-public/_web--cta";
-@import "views-public/_web--signup";
+// --home
+@import "views/page-home/_banner";
+
+// --features
+
+// --pricing
+@import "views/page-plans/_banner";
+@import "views/page-plans/_plans";
+@import "views/page-plans/_content";
+
+// --blog

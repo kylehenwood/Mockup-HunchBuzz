@@ -8,7 +8,7 @@
   cursor: pointer;
   font-family: $font-family;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
   display: block;
   width: 100%;
@@ -20,7 +20,6 @@
   &:focus {
     //box-shadow: $shadow-hover;
   }
-  //@include transition(box-shadow 80ms ease-in);
   &:focus {}
   &.button--hover,
   &:hover {
@@ -42,19 +41,12 @@
   line-height: 24px;
   padding: 0 12px;
 }
-
 //--32
 .button--32 {
   height: 32px;
   line-height: 24px;
   padding: 2px 12px;
 }
-.button--32-square {
-  height: 32px;
-  line-height: 24px;
-  padding: 2px;
-}
-
 //--36
 .button--36 {
   height: 36px;
@@ -67,17 +59,11 @@
   line-height: 24px;
   padding: 6px 16px;
 }
-.button--40-square {
-  height: 40px;
-  line-height: 24px;
-  padding: 6px;
-}
-
 //--48
 .button--48 {
   height: 48px;
   line-height: 24px;
-  padding: 8px 20px;
+  padding: 10px 20px;
 }
 
 
@@ -119,7 +105,7 @@
 // colors
 
 //--white
-.button--white {
+.button--white-stroke {
   color: $text-black;
   background: white;
   border-color: $color-grey-400;
@@ -134,7 +120,24 @@
   }
 }
 
-.button--white-stroke {
+.button--white {
+  color: $text-black;
+  background: white;
+  border-color: white;
+  &:hover {
+    background: $color-grey-200;
+    border-color: $color-grey-200;
+  }
+  &.button--active,
+  &:active {
+    background: $color-grey-300;
+    border-color: $color-grey-300;
+  }
+}
+
+
+
+.button--transparent-stroke {
   @include button-color-stroke (
       rgba(white,0.6),
       rgba(white,0.8),
@@ -349,4 +352,3 @@
   height: 24px;
   padding: 4px 8px 4px 0;
 }
-

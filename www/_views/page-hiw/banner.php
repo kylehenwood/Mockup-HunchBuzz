@@ -5,7 +5,7 @@
 		<div class="center center--1120">
 	    <div class="projects-banner">
 	  		<div class="anim--in-bot">
-	  			<h1 class="heading-1 text-white text-center">About me.</h1>
+	  			<h1 class="heading-1 text-white text-center">How it works.</h1>
 	  		</div>
 	    </div>
 		</div>

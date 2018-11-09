@@ -9,79 +9,46 @@ html {
   position: relative;
   overflow-y: scroll;
   min-height: 100%;
-  background: $color-grey-100;
-  padding: 56px 0;
+  background: $color-red-100;
+  //padding: 56px 0;
 }
 
 
 //layout__children
 .layout__header {
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  padding: 0 24px;
-  height: 56px;
-  width: 100%;
-  background: $color-cyan-800;
-  @include screen-mob {
-    height: auto;
-    padding: 0 16px;
-    background: white;
-  }
-}
-
-.layout__navigation {
-  padding: 0 12px;
-  background: white;
+  background: $color-blue-700;
+  padding: 0 20px;
 }
 
 .layout__banner {
-  background-position:center;
-  @include verticalGradient($color-cyan-700,$color-purple-800);
+  background: $color-blue-700;
 }
-.layout__banner-grid {
-  width: 100%;
-  height: 100%;
-  background-position: top center;
-  background-size: 80px 88px;
-  background-image: url('../images/banner-grid.png');
-  background-repeat: repeat;
-}
-
 
 .layout__section {
-  padding: 0 24px;
+  padding: 80px 24px;
   @include screen-mob {
-    padding: 0 16px;
+    padding: 40px 16px;
   }
 }
 .layout__section--white {
   background: white;
 }
 .layout__section--grey {
-  background: $color-grey-200;
+  background: $color-grey-100;
 }
-.layout__section--border {
-  border-bottom: 1px solid $color-grey-300;
+.layout__section--plans {
+  background: white;
 }
-.layout__container {}
-.layout__content {
-  padding: 24px;
-  @include screen-mob {
-    padding: 24px 16px;
-  }
+.layout__section--blue {
+  background: $color-blue-700;
 }
 
+
 .layout__footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   height: 56px;
   padding: 0 24px;
   width: 100%;
   background: white;
-  border-top: 1px solid $color-grey-300;
   overflow: hidden;
   @include screen-mob {
     padding: 0 16px;

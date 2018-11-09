@@ -6,7 +6,7 @@ include 'session.php';
 function displayContent()	{
   $content = null;
   $title = null;
-
+  $head = setContent('./_chrome/chrome-head.php');
 
 	// Page switch
   if (isset($_GET['pageID'])) {
@@ -29,9 +29,9 @@ function displayContent()	{
       $content = setContent('./_views/page-hiw/_construct.php');
       break;
 
-			case $pageName == 'pricing';
-      $title = 'HunchBuzz - Pricing';
-      $content = setContent('./_views/page-pricing/_construct.php');
+			case $pageName == 'plans';
+      $title = 'HunchBuzz - Plans';
+      $content = setContent('./_views/page-plans/_construct.php');
       break;
 
       // 404 page not found
@@ -49,10 +49,12 @@ function displayContent()	{
 
   echo '<!DOCTYPE html>';
   echo '<html class="js-html svg">';
-	echo '<title>'.$title.'</title>';
-  echo '<body class="layout">';
+  echo $head;
+  echo '<title>'.$title.'</title>';
+  echo '<body class="layout js-layout">';
   echo $content;
   echo '</body>';
+  echo '</html>';
 
   return false;
 }

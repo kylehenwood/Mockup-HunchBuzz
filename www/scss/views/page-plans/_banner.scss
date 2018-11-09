@@ -1,0 +1,129 @@
+
+.plans-banner {
+  padding: 120px 0 240px;
+}
+
+.plans-banner__title {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.plans-container {
+  position: relative;
+  margin: -200px 0 16px;
+  border-radius: 4px;
+  background: white;
+}
+
+.plans-container__plan {
+  float: left;
+  width: calc(100%/3);
+  margin: 0 0 16px;
+  @include screen-med {
+    width: 100%;
+  }
+}
+
+.plans-container__plan--reccomended {
+  box-shadow: $shadow-300;
+  border-radius: 0 0 8px 8px;
+}
+
+.plans-container__plan--enterprise {}
+
+.plans-container__usd {
+  position: absolute;
+  top: -32px;
+  left: 0;
+  color: white;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+
+//-- plan
+.plan {
+  position: relative;
+  padding: 40px 24px;
+}
+.plan__label {
+  height: 24px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+.plan__label--reccomended {
+  color: $color-green-500;
+}
+
+.plan__title {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: $font-family-heading;
+  line-height: 1.2;
+  text-align: center;
+  color: $color-grey-800;
+
+}
+.plan__price {
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 48px;
+  color: $color-grey-600;
+  padding: 8px 0;
+}
+.plan__price--reccomended {
+  color: $color-green-500;
+}
+.plan__frequency {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 24px;
+  color: $color-grey-500;
+  margin: 0 0 16px;
+}
+.plan__cta {
+  max-width: 240px;
+  margin: 0 auto 32px;
+}
+.plan__border {
+  background: $color-grey-300;
+  border-radius: 2px;
+  height: 2px;
+  margin: 0 0 32px;
+}
+.plan__included {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 24px;
+  margin: 0 0 16px;
+}
+.plan__features {}
+
+.plan-feature {
+  padding: 0 0 0 32px;
+  position: relative;
+}
+.plan-feature__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px;
+  color: $color-grey-500;
+}
+.plan-feature__label {
+  padding: 5px 0;
+  line-height: 22px;
+  font-size: 14px;
+  color: $color-grey-700;
+}
