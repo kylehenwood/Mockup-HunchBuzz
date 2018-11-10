@@ -1,0 +1,187 @@
+
+//-- plan
+.plan {
+  padding: 40px 24px;
+  @include screen-med {
+    border-radius: 8px;
+    padding: 0;
+    background: white;
+    box-shadow: $shadow-100;
+    &:hover {
+      background: $color-grey-100;
+      box-shadow: $shadow-200;
+    }
+  }
+}
+
+.plan__clickable {
+  position: relative;
+  @include screen-med {
+    padding: 0 0 0 56px;
+  }
+}
+
+.plan--enterprise {
+  display: none;
+  @include screen-med {
+    display: block;
+  }
+}
+
+// mobile accordion expand
+.plan--open {
+  @include screen-med {
+    background: white;
+    box-shadow: $shadow-200;
+    .plan__content {
+      display: block;
+    }
+    .plan__mobile-arrow {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+
+.plan__mobile-arrow {
+  display: none;
+  @include screen-med {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 8px;
+    padding: 24px 16px;
+  }
+}
+.plan__label {
+  height: 24px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+  @include screen-med {
+    display: none;
+  }
+}
+.plan__label--reccomended {
+  color: $color-green-500;
+}
+
+.plan__title {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: $font-family-heading;
+  line-height: 1.2;
+  text-align: center;
+  color: $color-grey-800;
+  @include screen-med {
+    padding: 16px 0;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: left;
+  }
+}
+.plan__price {
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 48px;
+  color: $color-grey-600;
+  padding: 8px 0;
+  @include screen-med {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: bold;
+    color: $color-grey-800;
+  }
+}
+
+.plan__price--monthly:after {
+  @include screen-med {
+    content: '/month';
+    color: $color-grey-500;
+    font-weight: normal;
+  }
+}
+
+.plan__price--reccomended {
+  color: $color-green-500;
+  @include screen-med {
+    color: $color-grey-800;
+  }
+}
+
+.plan__content {
+  @include screen-med {
+    padding: 0 24px 24px;
+  }
+}
+
+.plan__frequency {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 24px;
+  color: $color-grey-500;
+  margin: 0 0 16px;
+  @include screen-med {
+    display: none;
+  }
+}
+.plan__cta {
+  max-width: 240px;
+  margin: 0 auto 32px;
+  @include screen-med {
+    display: none;
+  }
+}
+.plan__border {
+  background: $color-grey-300;
+  border-radius: 2px;
+  height: 2px;
+  margin: 0 0 32px;
+}
+.plan__included {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 24px;
+  margin: 0 0 16px;
+  @include screen-med {
+    text-align: left;
+    margin: 0 0 16px 8px;
+  }
+}
+.plan__content {
+  @include screen-med {
+    display: none;
+  }
+}
+.plan__features {}
+
+
+
+// Feature block
+.plan-feature {
+  padding: 0 0 0 32px;
+  position: relative;
+}
+.plan-feature__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px;
+  color: $color-grey-500;
+}
+.plan-feature__label {
+  padding: 5px 0;
+  line-height: 22px;
+  font-size: 14px;
+  color: $color-grey-700;
+}

@@ -27,7 +27,7 @@ html {
 .layout__section {
   padding: 80px 24px;
   @include screen-mob {
-    padding: 40px 16px;
+    padding: 40px 24px;
   }
 }
 .layout__section--white {
@@ -36,12 +36,20 @@ html {
 .layout__section--grey {
   background: $color-grey-100;
 }
-.layout__section--plans {
-  background: white;
-}
 .layout__section--blue {
   background: $color-blue-700;
 }
+
+
+.layout__plans {
+  padding: 80px 24px 0;
+  background: white;
+  @include screen-med {
+    padding: 0px 24px 40px;
+    background: $color-blue-700;
+  }
+}
+
 
 
 .layout__footer {

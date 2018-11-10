@@ -34,6 +34,9 @@
           </div>
         </div>
       </div>
+
+      <div class="header-layout__mobile-button"></div>
+      <div class="header-layout__mobile-navigation"></div>
     </div>
 
   </div>
