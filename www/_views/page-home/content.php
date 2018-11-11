@@ -1,152 +1,108 @@
-
-<!-- layout__banner -->
-<div class="layout__banner">
-  <div class="layout__banner-grid">
-    <div class="center center--1120">
-      <div class="home-banner">
-
-        <div class="home-banner__title">Coming soon!</div>
-        <div class="home-banner__message">
-          <p>
-            <strong>SiteShot</strong> takes screenshots of your website,<br>
-            compares them with previous versions,<br>
-            <strong>and notifies you of any changes.</strong>
-          </p>
-        </div>
-
-        <div class="home-banner__mockup">
-          <div class="home-banner__shadow"></div>
-          <div class="banner-mockup js-banner-mock">
-            <img src="images/landing/ss-banner.svg" width="720" height="424">
+<div class="layout__section layout__section--white">
+  <div class="center center--1040">
+    <div class="customers">
+      <div class="customers__title">Trusted worldwide</div>
+      <ul class="customers__list clearfix">
+        <li class="customers__item"></li>
+        <li class="customers__item"></li>
+        <li class="customers__item"></li>
+        <li class="customers__item"></li>
+        <li class="customers__item"></li>
+      </ul>
+      <div class="customers__viewall">
+        <a class="actionlink">
+          <div class="actionlink__text">Learn more about our customers</div>
+          <div class="actionlink__icon">
+            <span class="flat-icon icon--16 icon--arrow-right"></span>
           </div>
-        </div>
-
+        </a>
       </div>
     </div>
   </div>
 </div>
 
 
-<!-- layout__container -->
-<div class="layout__container">
-
-  <!-- email section 1 -->
-  <div id="beta-input" class="layout__section layout__section--grey layout__section--border">
-    <div class="center center--1120">
+<!-- content -->
+<div class="layout__section layout__section--blue">
+  <div class="center center--1040">
 
 
-      <!-- signup component -->
-      <div class="signup">
-        <h1 class="signup__heading">We're looking for beta testers!</h1>
-
-        <div class="signup__success">
-          <div class="beta-success">
-            Email successfully registered, we will be in touch soon.
-          </div>
-        </div>
-
-        <div class="signup__input">
-          <div class="form-brick">
-            <div class="form-brick__label">Join the beta waiting list</div>
-            <div class="form-brick__element">
-
-              <!-- swanky block -->
-              <div class="email-validation">
-                <div class="email-validation__input">
-                  <input class="input-style" type="email" placeholder="email@address.io">
-                </div>
-                <div class="email-validation__validation email-validation__validation--show">
-                  <p>Invalid email address</p>
-                </div>
-                <div class="email-validation__button">
-                  <button class="button button--40 button--purple">
-                    Submit
-                  </button>
-                  <button class="button button--40 button--disabled">
-                    <div class="button__icon">
-                      <div class="aperture aperture--24 aperture--white">
-                        <div class="aperture__ring"></div>
-                        <div class="aperture__icon"></div>
-                      </div>
-                    </div>
-                  </button>
-                </div>
-              </div>
-
-
-            </div>
+    <div class="home-content">
+      <div class="home-content__section">
+        <div class="home-section home-section--right clearfix">
+          <div class="home-section__illustration"></div>
+          <div class="home-section__content">
+            <div class="home-section__label">Connect</div>
+            <h3 class="home-section__heading">Engage employees and stakeholders.</h3>
+            <p class="home-section__description">Great ideas don't just come from management or innovation teams, new thinking can come from all areas of your organization. Let your stakeholders be heard and contribute to business outcomes.</p>
           </div>
         </div>
       </div>
 
 
-    </div>
-  </div>
-
-
-  <!-- content -->
-  <div class="layout__section layout__section--white layout__section--border">
-    <div class="center center--960">
-
-
-      <div class="feature-block feature-block--border">
-        <div class="feature-block__heading">Deploy with confidence</div>
-        <div class="feature-block__content">SiteShot can compare every page in your website for changes in seconds.</div>
-      </div>
-
-
-      <div class="content-block clearfix">
-        <div class="content-block__content">
-          <div class="content-section">
-            <div class="content-section__title">How does it work?</div>
-            <div class="content-section__content">
-              <p>SiteShot takes a screenshot of every page you request, compares the result against previous versions, and when changes are found, notifies you.</p>
-            </div>
-          </div>
-        </div>
-        <div class="content-block__content">
-          <div class="illustration illustration--how-it-works">
-            <img src="images/landing/how-it-works.svg" height="240" width="440">
+      <div class="home-content__section">
+        <div class="home-section home-section--left clearfix">
+          <div class="home-section__illustration"></div>
+          <div class="home-section__content">
+            <div class="home-section__label">Collaborate</div>
+            <h3 class="home-section__heading">Enable collaboration and new thinking.</h3>
+            <p class="home-section__description">Enable collaboration through a simple and intuitive idea generation and evaluation process. Create targeted challenges that reflect the issues and opportunities your business faces. Uncover diverse perspectives and break down organizational silos.</p>
           </div>
         </div>
       </div>
 
 
-      <div class="content-block clearfix">
-        <div class="content-block__content">
-          <div class="content-section">
-            <div class="content-section__title">Does SiteShot need access to my code?</div>
-            <div class="content-section__content">
-              <p>Nope!</p>
-              <p>Setting up SiteShot takes minutes, simply add the URL's of pages you want to test into our UI, Configure a webhook that will trigger SiteShot to run when you deploy, and you're set.</p>
-            </div>
-          </div>
-        </div>
-        <div class="content-block__content">
-          <div class="illustration illustration--no-code">
-            <img src="images/landing/no-code.png" height="240" width="240">
+      <div class="home-content__section">
+        <div class="home-section home-section--right clearfix">
+          <div class="home-section__illustration"></div>
+          <div class="home-section__content">
+            <div class="home-section__label">Act</div>
+            <h3 class="home-section__heading">Accelerate innovation.</h3>
+            <p class="home-section__description">Capture new solutions to challenges and discover opportunities to improve processes, products and business models. Surface and test the best ideas, then turn those ideas into action.</p>
           </div>
         </div>
       </div>
 
     </div>
+
+
   </div>
+</div>
 
-  <!-- secondary signup -->
-  <div class="layout__section layout__section--grey">
-    <div class="center center--960">
 
-      <div class="padding-wrapper">
-        <div class="available">
-          <div class="available__headline">
-            Are you available for testing?
-          </div>
-          <div class="available__button">
-            <a class="button button--40 button--white-stroke" href="#beta-input">Join the beta waiting list!</a>
-          </div>
+<!-- -->
+<div class="layout__section layout__section--white">
+  <div class="center center--1040">
+
+    <div class="home-crowdsource">
+      <div class="home-crowdsource__image"></div>
+      <div class="home-crowdsource__content">
+        <h3 class="home-crowdsource__title">You manage customers, sales and finance — now manage innovation too.</h3>
+        <p class="home-crowdsource__text">HunchBuzz is an idea management system that enables organizations to harness ideas and feedback from employees, partners and customers. It’s used globally by organizations of all kinds to manage innovation.</p>
+        <div class="home-crowdsource__button">
+          <a class="actionlink">
+            <div class="actionlink__text">Read more</div>
+            <div class="actionlink__icon">
+              <span class="flat-icon icon--16 icon--arrow-right"></span>
+            </div>
+          </a>
         </div>
       </div>
+    </div>
 
+  </div>
+</div>
+
+
+<!-- quote -->
+<div class="layout__section layout__section--grey">
+  <div class="quote-card">
+    <div class="quote-card__logo"></div>
+    <div class="quote-card__icon"></div>
+    <div class="quote-card__content">
+      <div class="quote-card__comment">The City of London worked closely with HunchBuzz to pilot a new way of engaging with our employees. We were delighted with the tremendous response both in terms of the number of ideas received and the sentiment of the overall feedback.</div>
+      <div class="quote-card__author">Janet Fortune</div>
+      <div class="quote-card__author-role">Assistant Director Human Resources, City of London UK</div>
     </div>
   </div>
 </div>

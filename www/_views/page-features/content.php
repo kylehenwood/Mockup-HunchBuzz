@@ -2,7 +2,6 @@
 <div class="layout__section layout__section--white">
   <div class="center center--1040">
 
-
     <div class="feature-primary clearfix">
       <div class="feature-primary__item"></div>
       <div class="feature-primary__item"></div>
@@ -17,7 +16,6 @@
       <div class="feature-secondary__item"></div>
       <div class="feature-secondary__item"></div>
     </div>
-
 
   </div>
 </div>

@@ -3,6 +3,7 @@
 	<div class="center center--1120">
 		<div class="plans-banner">
 			<h1 class="plans-banner__title">Our plans.</h1>
+			<div class="plans-banner__border"></div>
 		</div>
 	</div>
 </div>

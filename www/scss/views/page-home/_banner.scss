@@ -1,0 +1,145 @@
+.home-banner {
+  overflow: hidden;
+  position: relative;
+  padding: 120px 0 48px;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 240px;
+    width: 100%;
+    background: white;
+  }
+}
+.home-banner__content {
+  position: relative;
+  z-index: 5;
+  margin: 0 0 56px;
+}
+.home-banner__title {
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 0 0 16px;
+}
+
+.home-banner__subtitle {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: normal;
+  margin: 0 0 24px;
+}
+
+.home-banner__actions {
+  height: 56px;
+  text-align: center;
+}
+.home-banner__signup,
+.home-banner__demo {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.home-banner__mockup {
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  margin: 0 auto;
+  width: 800px;
+  height: 520px;
+  border-radius: 16px;
+  background: white;
+  //background: $color-grey-200;
+  box-shadow: $shadow-500;
+}
+
+.home-banner__pulse {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  width: 240px;
+  height: 240px;
+  transform: translateX(-50%);
+}
+
+
+// _pulse animation
+.pulse {
+  pointer-events: none;
+  position: relative;
+  width: 240px;
+  height: 240px;
+}
+.pulse__ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(white,0.1);
+  animation-name: pulse-animation;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse-animation {
+  000% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  080% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(5);
+  }
+}
+
+.pulse__ring:nth-child(1) {
+  animation-delay: 0ms;
+}
+.pulse__ring:nth-child(2) {
+  animation-delay: -2000ms;
+}
+.pulse__ring:nth-child(3) {
+  animation-delay: -4000ms;
+}
+.pulse__ring:nth-child(4) {
+  animation-delay: -6000ms;
+}
+.pulse__ring:nth-child(5) {
+  animation-delay: -8000ms;
+}
+
+//-
+.screenshot {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  &:hover {
+    .screenshot__video {
+      padding: 48px 0;
+    }
+  }
+}
+.screenshot__video {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 48px 0 24px;
+  background-image: linear-gradient(to bottom,transparent, rgba(black,0.5));
+  transition: 80ms ease-out;
+}

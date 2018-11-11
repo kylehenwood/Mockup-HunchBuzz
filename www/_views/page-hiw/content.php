@@ -11,7 +11,7 @@
         </div>
       </li>
 			<li class="hiw-container__dots">
-        <div class="hiw-progress">
+        <div class="hiw-progress hiw-progress--animate">
           <div class="hiw-progress__dot"></div>
           <div class="hiw-progress__dot"></div>
           <div class="hiw-progress__dot"></div>

@@ -50,6 +50,7 @@
 // _views
 // --home
 @import "views/page-home/_banner";
+@import "views/page-home/_content";
 
 // --features
 @import "views/page-features/_banner";
@@ -57,7 +58,7 @@
 
 // --how it works
 @import "views/page-hiw/_banner";
-//@import "views/page-hiw/_content";
+@import "views/page-hiw/_content";
 
 // --pricing
 @import "views/page-plans/_banner";

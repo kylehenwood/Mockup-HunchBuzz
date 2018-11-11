@@ -4,7 +4,7 @@
 
     <div class="header-layout">
       <div class="header-layout__logo">
-        <a class="header-logo"></a>
+        <a class="header-logo" href="index.php"></a>
       </div>
       <div class="header-layout__navigation">
         <div class="header-navigation">

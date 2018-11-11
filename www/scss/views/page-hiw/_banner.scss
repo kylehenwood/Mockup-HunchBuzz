@@ -12,6 +12,15 @@
   font-size: 36px;
   line-height: 1.2;
   font-weight: normal;
+  margin: 0 0 16px;
+}
+
+.hiw-banner__border {
+  height: 2px;
+  width: 160px;
+  background: white;
+  border-radius: 2px;
+  margin: 0 auto;
 }
 
 
@@ -33,24 +42,30 @@
   width: 8px;
   height: 8px;
   border-radius: 6px;
-  background: $color-grey-100;
-  animation-name: progress-dot;
-  animation-duration: 4s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
+  background: $color-grey-300;
+}
+
+.hiw-progress--animate {
+  .hiw-progress__dot {
+    animation-name: progress-dot;
+    animation-duration: 2.4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+  }
 }
 
 @keyframes progress-dot {
   000% {
-    background: $color-grey-100;
+    background: $color-grey-300;
     transform: scale(1);
   }
-  050% {
+  020% {
     background: $color-blue-500;
     transform: scale(1.4);
   }
+  050%,
   100% {
-    background: $color-grey-100;
+    background: $color-grey-300;
     transform: scale(1);
   }
 }
