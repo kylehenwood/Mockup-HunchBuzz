@@ -1,0 +1,54 @@
+.features-banner {
+  padding: 120px 0 180px;
+  @include screen-med {
+    padding: 80px 0;
+  }
+}
+
+.features-banner__content {
+  max-width: 656px;
+}
+
+.features-banner__title {
+  text-align: left;
+  color: white;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 0 0 16px;
+}
+
+.features-banner__border {
+  width: 160px;
+  height: 2px;
+  border-radius: 2px;
+  margin: 0 0 24px;
+  background: white;
+}
+
+.features-banner__subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  color: white;
+  margin: 0 0 24px;
+}
+
+
+.features-banner__actions {
+  height: 56px;
+}
+.features-banner__signup,
+.features-banner__demo {
+  float: left;
+}
+.features-banner__demo {
+  padding: 0 0 0 16px;
+}
+
+.features-banner__illustration {
+  float: right;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 2px solid white;
+}

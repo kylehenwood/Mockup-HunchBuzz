@@ -2,13 +2,13 @@
 //-- plan
 .plan {
   padding: 40px 24px;
+  overflow: hidden;
   @include screen-med {
     border-radius: 8px;
     padding: 0;
     background: white;
     box-shadow: $shadow-100;
     &:hover {
-      background: $color-grey-100;
       box-shadow: $shadow-200;
     }
   }
@@ -16,8 +16,17 @@
 
 .plan__clickable {
   position: relative;
+  border-radius: 8px;
   @include screen-med {
+    cursor: pointer;
+    user-select: none;
     padding: 0 0 0 56px;
+    &:hover {
+      background: $color-grey-100;
+    }
+    &:active {
+      background: $color-grey-300;
+    }
   }
 }
 

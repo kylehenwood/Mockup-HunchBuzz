@@ -776,6 +776,19 @@ html {
   line-height: 24px;
   padding: 10px 20px; }
 
+.button--56 {
+  height: 56px;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 14px 32px; }
+
+.button--shadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .button--shadow:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .button--shadow:active {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
 .button--white-stroke {
   color: #424242;
   background: white;
@@ -1019,6 +1032,176 @@ html {
   height: 24px;
   padding: 4px 8px 4px 0; }
 
+.features-banner {
+  padding: 120px 0 180px; }
+  @media screen and (max-width: 960px) {
+    .features-banner {
+      padding: 80px 0; } }
+
+.features-banner__content {
+  max-width: 656px; }
+
+.features-banner__title {
+  text-align: left;
+  color: white;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 0 0 16px; }
+
+.features-banner__border {
+  width: 160px;
+  height: 2px;
+  border-radius: 2px;
+  margin: 0 0 24px;
+  background: white; }
+
+.features-banner__subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  color: white;
+  margin: 0 0 24px; }
+
+.features-banner__actions {
+  height: 56px; }
+
+.features-banner__signup,
+.features-banner__demo {
+  float: left; }
+
+.features-banner__demo {
+  padding: 0 0 0 16px; }
+
+.features-banner__illustration {
+  float: right;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 2px solid white; }
+
+.feature-primary {
+  margin: -160px -8px 72px; }
+
+.feature-primary__item {
+  float: left;
+  width: calc(100%/3);
+  padding: 0 8px; }
+  .feature-primary__item:before {
+    content: '';
+    display: block;
+    height: 280px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.feature-secondary {
+  margin: -8px; }
+
+.feature-secondary__item {
+  float: left;
+  width: 50%;
+  padding: 8px; }
+  .feature-secondary__item:before {
+    content: '';
+    display: block;
+    height: 160px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 2px #E0E0E0; }
+
+.hiw-banner {
+  padding: 120px 0 240px; }
+  @media screen and (max-width: 960px) {
+    .hiw-banner {
+      padding: 80px 0; } }
+
+.hiw-banner__title {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: normal; }
+
+.hiw-container {
+  margin: -200px 0 0; }
+
+.hiw-container__step {
+  width: 100%; }
+
+.hiw-container__dots {
+  width: 24px;
+  margin: 0 auto; }
+
+.hiw-progress__dot {
+  margin: 16px 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 6px;
+  background: #F5F5F5;
+  animation-name: progress-dot;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite; }
+
+@keyframes progress-dot {
+  000% {
+    background: #F5F5F5;
+    transform: scale(1); }
+  050% {
+    background: #2196F3;
+    transform: scale(1.4); }
+  100% {
+    background: #F5F5F5;
+    transform: scale(1); } }
+
+.hiw-progress__dot:nth-child(1) {
+  animation-delay: 0ms; }
+
+.hiw-progress__dot:nth-child(2) {
+  animation-delay: 200ms; }
+
+.hiw-progress__dot:nth-child(3) {
+  animation-delay: 400ms; }
+
+.hiw-progress__dot:nth-child(4) {
+  animation-delay: 600ms; }
+
+.hiw-progress__dot:nth-child(5) {
+  animation-delay: 800ms; }
+
+.hiw-step {
+  position: relative;
+  padding: 0 0 0 240px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: inset 0 0 0 2px #E0E0E0; }
+
+.hiw-step--selected {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.hiw-step__indicator {
+  position: absolute;
+  top: -32px;
+  left: -32px;
+  height: 64px;
+  width: 64px;
+  background: #9C27B0;
+  border-radius: 40px;
+  border: 2px solid white;
+  z-index: 5; }
+
+.hiw-step__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 240px;
+  background: black;
+  border-radius: 8px 0 0 8px; }
+
+.hiw-step__content {
+  height: 440px; }
+
 .plans-banner {
   padding: 120px 0 240px; }
   @media screen and (max-width: 960px) {
@@ -1119,7 +1302,8 @@ html {
       font-size: 16px; } }
 
 .plan {
-  padding: 40px 24px; }
+  padding: 40px 24px;
+  overflow: hidden; }
   @media screen and (max-width: 960px) {
     .plan {
       border-radius: 8px;
@@ -1127,14 +1311,20 @@ html {
       background: white;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
       .plan:hover {
-        background: #F5F5F5;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); } }
 
 .plan__clickable {
-  position: relative; }
+  position: relative;
+  border-radius: 8px; }
   @media screen and (max-width: 960px) {
     .plan__clickable {
-      padding: 0 0 0 56px; } }
+      cursor: pointer;
+      user-select: none;
+      padding: 0 0 0 56px; }
+      .plan__clickable:hover {
+        background: #F5F5F5; }
+      .plan__clickable:active {
+        background: #E0E0E0; } }
 
 .plan--enterprise {
   display: none; }

@@ -1,0 +1,106 @@
+
+.hiw-banner {
+  padding: 120px 0 240px;
+  @include screen-med {
+    padding: 80px 0;
+  }
+}
+
+.hiw-banner__title {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+
+
+.hiw-container {
+  margin: -200px 0 0;
+}
+.hiw-container__step {
+  width: 100%;
+}
+.hiw-container__dots {
+  width: 24px;
+  margin: 0 auto;
+}
+
+.hiw-progress {}
+.hiw-progress__dot {
+  margin: 16px 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 6px;
+  background: $color-grey-100;
+  animation-name: progress-dot;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes progress-dot {
+  000% {
+    background: $color-grey-100;
+    transform: scale(1);
+  }
+  050% {
+    background: $color-blue-500;
+    transform: scale(1.4);
+  }
+  100% {
+    background: $color-grey-100;
+    transform: scale(1);
+  }
+}
+
+.hiw-progress__dot:nth-child(1) {
+  animation-delay: 0ms;
+}
+.hiw-progress__dot:nth-child(2) {
+  animation-delay: 200ms;
+}
+.hiw-progress__dot:nth-child(3) {
+  animation-delay: 400ms;
+}
+.hiw-progress__dot:nth-child(4) {
+  animation-delay: 600ms;
+}
+.hiw-progress__dot:nth-child(5) {
+  animation-delay: 800ms;
+}
+
+.hiw-step {
+  position: relative;
+  padding: 0 0 0 240px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: inset 0 0 0 2px $color-grey-300;
+}
+.hiw-step--selected {
+  box-shadow: $shadow-300;
+}
+.hiw-step__indicator {
+  position: absolute;
+  top: -32px;
+  left: -32px;
+  height: 64px;
+  width: 64px;
+  background: $color-purple-500;
+  border-radius: 40px;
+  border: 2px solid white;
+  z-index: 5;
+}
+.hiw-step__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 240px;
+  background: black;
+  border-radius: 8px 0 0 8px;
+}
+.hiw-step__content {
+  height: 440px;
+}

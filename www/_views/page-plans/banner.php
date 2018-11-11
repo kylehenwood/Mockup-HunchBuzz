@@ -1,13 +1,14 @@
 <!-- Banner -->
 <div class="layout__banner">
 	<div class="center center--1120">
-
 		<div class="plans-banner">
-			<h1 class="plans-banner__title">Our plans</h1>
+			<h1 class="plans-banner__title">Our plans.</h1>
 		</div>
-
 	</div>
 </div>
+
+
+
 
 <div class="layout__plans">
 	<div class="center center--1040">

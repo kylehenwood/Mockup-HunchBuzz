@@ -1,0 +1,34 @@
+.feature-primary {
+  margin: -160px -8px 72px;
+}
+.feature-primary__item {
+  float: left;
+  width: calc(100%/3);
+  padding: 0 8px;
+  &:before {
+    content: '';
+    display: block;
+    height: 280px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: $shadow-200;
+  }
+}
+
+
+.feature-secondary {
+  margin: -8px;
+}
+.feature-secondary__item {
+  float: left;
+  width: 50%;
+  padding: 8px;
+  &:before {
+    content: '';
+    display: block;
+    height: 160px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 2px $color-grey-300;
+  }
+}

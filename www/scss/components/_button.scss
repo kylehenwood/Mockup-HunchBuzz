@@ -33,7 +33,6 @@
 
 
 // sizes
-
 //--28
 .button--28 {
   font-size: 12px;
@@ -64,6 +63,25 @@
   height: 48px;
   line-height: 24px;
   padding: 10px 20px;
+}
+//--56
+.button--56 {
+  height: 56px;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 14px 32px;
+}
+
+
+// shadow
+.button--shadow {
+  box-shadow: $shadow-200;
+  &:hover {
+    box-shadow: $shadow-400;
+  }
+  &:active {
+    box-shadow: $shadow-300;
+  }
 }
 
 

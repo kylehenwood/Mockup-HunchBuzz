@@ -1,12 +1,10 @@
 <!-- Banner -->
 <div class="page__banner">
-	<div class="layout__banner layout__banner--grey">
+	<div class="layout__banner">
 
-		<div class="center center--1120">
-	    <div class="projects-banner">
-	  		<div class="anim--in-bot">
-	  			<h1 class="heading-1 text-white text-center">How it works.</h1>
-	  		</div>
+		<div class="center center--1040">
+	    <div class="hiw-banner">
+  			<h1 class="hiw-banner__title">How it works.</h1>
 	    </div>
 		</div>
 
