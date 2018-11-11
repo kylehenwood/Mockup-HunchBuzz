@@ -1047,6 +1047,53 @@ html {
   height: 24px;
   padding: 4px 8px 4px 0; }
 
+.svg-bulb__glow {
+  animation-name: svg-bulb-glow;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite; }
+
+@keyframes svg-bulb-glow {
+  000% {
+    opacity: 0.8; }
+  100% {
+    opacity: 0.2; } }
+
+.svg-bulb__dot {
+  animation-name: svg-bulb-dot;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite; }
+
+.svg-bulb__dot--100 {
+  animation-delay: -2400ms; }
+
+.svg-bulb__dot--200 {
+  animation-delay: -2000ms; }
+
+.svg-bulb__dot--300 {
+  animation-delay: -1600ms; }
+
+.svg-bulb__dot--400 {
+  animation-delay: -1200ms; }
+
+.svg-bulb__dot--500 {
+  animation-delay: -800ms; }
+
+.svg-bulb__dot--600 {
+  animation-delay: -400ms; }
+
+.svg-bulb__dot--700 {
+  animation-delay: -000ms; }
+
+@keyframes svg-bulb-dot {
+  000% {
+    opacity: 0; }
+  020% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 .home-banner {
   overflow: hidden;
   position: relative;
