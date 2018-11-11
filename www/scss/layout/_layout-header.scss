@@ -104,6 +104,7 @@
   padding: 16px 0;
 }
 .header-navigation__item {
+  position: relative;
   display: inline-block;
   white-space: nowrap;
   line-height: 24px;
@@ -119,9 +120,23 @@
     transform: translateY(2px);
   }
 }
-.header-navigation__item--active {
+.header-navigation__item--selected {
   color: white;
 }
+
+.header-navigation__item--selected:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background: white;
+  transform: translate(-50%);
+}
+
 
 //--
 .header-auth {

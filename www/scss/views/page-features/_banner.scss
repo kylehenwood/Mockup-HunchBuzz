@@ -6,7 +6,7 @@
 }
 
 .features-banner__content {
-  max-width: 656px;
+  margin: 0 440px 0 0;
 }
 
 .features-banner__title {
@@ -47,8 +47,7 @@
 
 .features-banner__illustration {
   float: right;
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  border: 2px solid white;
+  width: 368px;
+  height: 368px;
+  margin: -56px 0 0;
 }

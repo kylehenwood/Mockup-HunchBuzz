@@ -1,22 +1,22 @@
 <div class="layout__section layout__section--white">
-  <div class="center center--1040">
-    <div class="customers">
-      <div class="customers__title">Trusted worldwide</div>
-      <ul class="customers__list clearfix">
-        <li class="customers__item"></li>
-        <li class="customers__item"></li>
-        <li class="customers__item"></li>
-        <li class="customers__item"></li>
-        <li class="customers__item"></li>
-      </ul>
-      <div class="customers__viewall">
-        <a class="actionlink">
-          <div class="actionlink__text">Learn more about our customers</div>
-          <div class="actionlink__icon">
-            <span class="flat-icon icon--16 icon--arrow-right"></span>
-          </div>
-        </a>
-      </div>
+  <div class="customers">
+    <div class="customers__title">Trusted worldwide</div>
+    <ul class="customers__list clearfix">
+      <li class="customers__item"></li>
+      <li class="customers__item"></li>
+      <li class="customers__item"></li>
+      <li class="customers__item"></li>
+      <li class="customers__item"></li>
+      <li class="customers__item"></li>
+      <li class="customers__item"></li>
+    </ul>
+    <div class="customers__viewall">
+      <a class="actionlink">
+        <div class="actionlink__text">Learn more about our customers</div>
+        <div class="actionlink__icon">
+          <span class="flat-icon icon--16 icon--arrow-right"></span>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -30,7 +30,9 @@
     <div class="home-content">
       <div class="home-content__section">
         <div class="home-section home-section--right clearfix">
-          <div class="home-section__illustration"></div>
+          <div class="home-section__illustration">
+            <?php include './_components/illustration-connect.php';?>
+          </div>
           <div class="home-section__content">
             <div class="home-section__label">Connect</div>
             <h3 class="home-section__heading">Engage employees and stakeholders.</h3>
@@ -42,7 +44,9 @@
 
       <div class="home-content__section">
         <div class="home-section home-section--left clearfix">
-          <div class="home-section__illustration"></div>
+          <div class="home-section__illustration">
+            <?php include './_components/illustration-collaborate.php';?>
+          </div>
           <div class="home-section__content">
             <div class="home-section__label">Collaborate</div>
             <h3 class="home-section__heading">Enable collaboration and new thinking.</h3>
@@ -54,7 +58,9 @@
 
       <div class="home-content__section">
         <div class="home-section home-section--right clearfix">
-          <div class="home-section__illustration"></div>
+          <div class="home-section__illustration">
+            <?php include './_components/illustration-innovation.php';?>
+          </div>
           <div class="home-section__content">
             <div class="home-section__label">Act</div>
             <h3 class="home-section__heading">Accelerate innovation.</h3>

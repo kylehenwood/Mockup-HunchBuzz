@@ -5,7 +5,9 @@
 		<div class="center center--1040">
 	    <div class="features-banner">
 
-				<div class="features-banner__illustration"></div>
+				<div class="features-banner__illustration">
+					<?php include './_components/illustration-innovation.php';?>
+				</div>
 
 				<div class="features-banner__content">
 	  			<h1 class="features-banner__title">Features that fit.</h1>

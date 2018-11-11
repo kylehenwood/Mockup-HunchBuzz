@@ -5,6 +5,7 @@ $(document).ready(function(){
   mobileNavigation();
   smoothScroll();
   planExpand();
+  navigationSelected();
 });
 
 // mobile navigation
@@ -32,6 +33,29 @@ function planExpand(){
       container.toggleClass('plan--open');
     });
   });
+}
+
+
+// Highlight current page navigation
+// ----------------------------
+function navigationSelected() {
+  var navFeatures = $('.js-nav-features');
+  var navHiw = $('.js-nav-hiw');
+  var navPlans = $('.js-nav-plans');
+  var navSelected;
+
+  switch(currentPage) {
+    case 'features':
+      navSelected = navFeatures;
+      break;
+    case 'hiw':
+      navSelected = navHiw;
+      break;
+    case 'pricing':
+      navSelected = navPlans;
+      break;
+  }
+  navSelected.addClass('header-navigation__item--selected');
 }
 
 

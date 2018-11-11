@@ -1,7 +1,6 @@
 // -----------------
-// Trusted worldwide
+// Customers
 // -----------------
-
 .customers {}
 .customers__title {
   font-family: $font-family;
@@ -15,19 +14,24 @@
   text-align: center;
   white-space: nowrap;
   padding: 32px 0 64px;
+  max-width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  // @include screen-med {
+  //   overflow-x: scroll;
+  // }
 }
 .customers__item {
   display: inline-block;
   width: 172px;
   height: 120px;
-  background: $color-grey-400;
+  background: $color-grey-300;
   border-radius: 4px;
   margin: 0 8px;
 }
 .customers__viewall {
   text-align: center;
 }
-
 
 
 // actionlink component
@@ -67,6 +71,9 @@
 
 
 
+// -----------------
+// Home content + illustration blocks
+// -----------------
 .home-content {}
 .home-content__section {}
 
@@ -92,8 +99,6 @@
 .home-section__illustration {
   width: 368px;
   height: 368px;
-  border-radius: 50%;
-  border: 2px solid white;
 }
 .home-section__content {
   display: flex;
@@ -127,8 +132,9 @@
 
 
 
-
-//-
+// -----------------
+// Crowdsource block
+// -----------------
 .home-crowdsource {
   position: relative;
   background: $color-grey-200;
@@ -140,7 +146,7 @@
 }
 .home-crowdsource__title {
   font-size: 28px;
-  line-height: 1.6;
+  line-height: 1.4;
   margin: 0 0 16px;
 }
 .home-crowdsource__text {

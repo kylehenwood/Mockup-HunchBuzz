@@ -8,18 +8,10 @@
       </div>
       <div class="header-layout__navigation">
         <div class="header-navigation">
-          <a class="header-navigation__item" href="index.php?pageID=features">
-            Features
-          </a>
-          <a class="header-navigation__item" href="index.php?pageID=how-it-works">
-            How it works
-          </a>
-          <a class="header-navigation__item" href="index.php?pageID=plans">
-            Plans
-          </a>
-          <a class="header-navigation__item" href="#">
-            Blog
-          </a>
+          <a class="header-navigation__item js-nav-features" href="index.php?pageID=features">Features</a>
+          <a class="header-navigation__item js-nav-hiw" href="index.php?pageID=how-it-works">How it works</a>
+          <a class="header-navigation__item js-nav-plans" href="index.php?pageID=plans">Plans</a>
+          <a class="header-navigation__item" href="#">Blog</a>
         </div>
       </div>
       <div class="header-layout__auth">
