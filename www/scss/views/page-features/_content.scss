@@ -1,34 +1,124 @@
 .feature-primary {
   margin: -160px -8px 72px;
+  @include screen-med {
+    margin: 8px 0;
+  }
 }
 .feature-primary__item {
   float: left;
   width: calc(100%/3);
   padding: 0 8px;
-  &:before {
-    content: '';
-    display: block;
-    height: 280px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: $shadow-200;
+  @include screen-med {
+    width: auto;
+    float: none;
+    padding: 0;
+    margin: 8px 0;
   }
 }
 
 
 .feature-secondary {
   margin: -8px;
+  @include screen-med {
+    margin: 0;
+  }
 }
 .feature-secondary__item {
   float: left;
   width: 50%;
   padding: 8px;
-  &:before {
-    content: '';
-    display: block;
-    height: 160px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: inset 0 0 0 2px $color-grey-300;
+  @include screen-med {
+    width: auto;
+    float: none;
+    padding: 0;
+    margin: 8px 0;
   }
+}
+
+
+
+
+// primary-feature
+.primary-feature {
+  position: relative;
+  height: 280px;
+  background: white;
+  padding: 32px 24px;
+  border-radius: 8px;
+  box-shadow: $shadow-200;
+  overflow: hidden;
+  @include screen-med {
+    height: auto;
+    box-shadow: inset 0 0 0 2px $color-grey-300;
+    padding: 24px 24px 24px 104px;
+  }
+}
+.primary-feature__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 8px;
+}
+.primary-feature__desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: $color-grey-700;
+}
+.primary-feature__image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background: $color-grey-100;
+  @include screen-med {
+    display: none;
+  }
+}
+.primary-feature__icon {
+  display: none;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: $color-grey-500;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  @include screen-med {
+    display: block;
+  }
+}
+
+
+// secondary-feature
+.secondary-feature {
+  position: relative;
+  height: 168px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 2px $color-grey-300;
+  padding: 24px 24px 24px 104px;
+  @include screen-med {
+    height: auto;
+  }
+}
+.secondary-feature__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 8px;
+}
+.secondary-feature__desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: $color-grey-700;
+}
+.secondary-feature__icon {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: $color-grey-500;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
 }
