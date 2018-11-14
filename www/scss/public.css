@@ -1317,7 +1317,7 @@ html {
   float: left;
   display: block;
   padding: 0 8px;
-  width: 216px; }
+  min-width: 216px; }
   @media screen and (max-width: 720px) {
     .brainstorm__signup,
     .brainstorm__demo {
@@ -1374,15 +1374,20 @@ html {
 .home-banner {
   overflow: hidden;
   position: relative;
-  padding: 120px 0 48px; }
+  padding: 120px 20px 48px;
+  text-align: center; }
   .home-banner:after {
     content: '';
     display: block;
     position: absolute;
+    left: 0;
     bottom: 0;
     height: 240px;
     width: 100%;
     background: white; }
+  @media screen and (max-width: 960px) {
+    .home-banner {
+      padding: 80px 20px 48px; } }
 
 .home-banner__content {
   position: relative;
@@ -1396,6 +1401,9 @@ html {
   line-height: 1.2;
   font-weight: normal;
   margin: 0 0 16px; }
+  @media screen and (max-width: 960px) {
+    .home-banner__title {
+      font-size: 32px; } }
 
 .home-banner__subtitle {
   text-align: center;
@@ -1406,21 +1414,25 @@ html {
   margin: 0 0 24px; }
 
 .home-banner__actions {
-  height: 56px;
-  text-align: center; }
+  display: inline-block;
+  height: 56px; }
 
 .home-banner__signup,
 .home-banner__demo {
-  display: inline-block;
-  margin: 0 8px; }
+  float: left;
+  padding: 0 8px;
+  min-width: 216px; }
+
+@media screen and (max-width: 720px) {
+  .home-banner__demo {
+    display: none; } }
 
 .home-banner__mockup {
   position: relative;
   overflow: hidden;
   z-index: 5;
   margin: 0 auto;
-  width: 800px;
-  height: 520px;
+  max-width: 800px;
   border-radius: 8px;
   background: white;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
@@ -1583,6 +1595,9 @@ html {
   background: #EEEEEE;
   padding: 0 0 0 400px;
   border-radius: 24px; }
+  @media screen and (max-width: 960px) {
+    .home-crowdsource {
+      padding: 0; } }
 
 .home-crowdsource__content {
   padding: 80px 40px; }
@@ -1604,15 +1619,21 @@ html {
   left: 0;
   width: 400px;
   height: 100%; }
+  @media screen and (max-width: 960px) {
+    .home-crowdsource__image {
+      display: none; } }
 
 .features-banner {
-  padding: 120px 0 240px; }
+  padding: 120px 20px 240px; }
   @media screen and (max-width: 960px) {
     .features-banner {
-      padding: 80px 0; } }
+      padding: 80px 20px; } }
 
 .features-banner__content {
   margin: 0 440px 0 0; }
+  @media screen and (max-width: 960px) {
+    .features-banner__content {
+      margin: 0; } }
 
 .features-banner__title {
   text-align: left;
@@ -1621,6 +1642,9 @@ html {
   line-height: 1.2;
   font-weight: normal;
   margin: 0 0 16px; }
+  @media screen and (max-width: 960px) {
+    .features-banner__title {
+      font-size: 32px; } }
 
 .features-banner__border {
   width: 160px;
@@ -1650,6 +1674,9 @@ html {
   width: 368px;
   height: 368px;
   margin: -56px 0 0; }
+  @media screen and (max-width: 960px) {
+    .features-banner__illustration {
+      display: none; } }
 
 .feature-primary {
   margin: -160px -8px 72px;

@@ -1,12 +1,15 @@
 .features-banner {
-  padding: 120px 0 240px;
+  padding: 120px 20px 240px;
   @include screen-med {
-    padding: 80px 0;
+    padding: 80px 20px;
   }
 }
 
 .features-banner__content {
   margin: 0 440px 0 0;
+  @include screen-med {
+    margin: 0;
+  }
 }
 
 .features-banner__title {
@@ -16,6 +19,9 @@
   line-height: 1.2;
   font-weight: normal;
   margin: 0 0 16px;
+  @include screen-med {
+    font-size: 32px;
+  }
 }
 
 .features-banner__border {
@@ -50,4 +56,7 @@
   width: 368px;
   height: 368px;
   margin: -56px 0 0;
+  @include screen-med {
+    display: none;
+  }
 }

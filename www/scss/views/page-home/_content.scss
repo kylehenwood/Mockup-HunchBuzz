@@ -112,6 +112,9 @@
   background: $color-grey-200;
   padding: 0 0 0 400px;
   border-radius: 24px;
+  @include screen-med {
+    padding: 0;
+  }
 }
 .home-crowdsource__content {
   padding: 80px 40px;
@@ -135,4 +138,7 @@
   left: 0;
   width: 400px;
   height: 100%;
+  @include screen-med {
+    display: none;
+  }
 }

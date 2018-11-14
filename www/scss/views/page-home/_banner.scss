@@ -1,15 +1,20 @@
 .home-banner {
   overflow: hidden;
   position: relative;
-  padding: 120px 0 48px;
+  padding: 120px 20px 48px;
+  text-align: center;
   &:after {
     content: '';
     display: block;
     position: absolute;
+    left: 0;
     bottom: 0;
     height: 240px;
     width: 100%;
     background: white;
+  }
+  @include screen-med {
+    padding: 80px 20px 48px;
   }
 }
 .home-banner__content {
@@ -24,6 +29,9 @@
   line-height: 1.2;
   font-weight: normal;
   margin: 0 0 16px;
+  @include screen-med {
+    font-size: 32px;
+  }
 }
 
 .home-banner__subtitle {
@@ -36,13 +44,20 @@
 }
 
 .home-banner__actions {
+  display: inline-block;
   height: 56px;
-  text-align: center;
 }
 .home-banner__signup,
 .home-banner__demo {
-  display: inline-block;
-  margin: 0 8px;
+  float: left;
+  padding: 0 8px;
+  min-width: 216px;
+}
+
+.home-banner__demo {
+  @include screen-mob {
+    display: none;
+  }
 }
 
 .home-banner__mockup {
@@ -50,11 +65,10 @@
   overflow: hidden;
   z-index: 5;
   margin: 0 auto;
-  width: 800px;
-  height: 520px;
+  max-width: 800px;
+  //height: 520px;
   border-radius: 8px;
   background: white;
-  //background: $color-grey-200;
   box-shadow: $shadow-500;
 }
 
