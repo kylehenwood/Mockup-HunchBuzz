@@ -70,8 +70,3 @@
     </div>
   </div>
 </div>
-
-
-
-<!-- signup -->
-<div class="layout__section layout__section--blue"></div>

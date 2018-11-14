@@ -111,13 +111,14 @@
   &:focus,
   &:hover {
     color: $dark;
-    background: rgba(white,0.2);
     border-color: $standard;
+    background: rgba(white,0.2);
   }
   &.button--active,
   &:active {
     color: $dark;
     border-color: $dark;
+    background: rgba(white,0.2);
   }
 }
 
@@ -159,9 +160,9 @@
 
 .button--transparent-stroke {
   @include button-color-stroke (
-      rgba(white,0.6),
-      rgba(white,0.8),
-      rgba(white,1)
+    rgba(white,0.6),
+    rgba(white,0.8),
+    rgba(white,1)
   );
 }
 
@@ -169,9 +170,9 @@
 //--pink
 .button--pink {
   @include button-color(
-      $color-pink-500,
-      $color-pink-300,
-      $color-pink-700
+    $color-pink-500,
+    $color-pink-300,
+    $color-pink-700
   );
 }
 .button--pink-stroke {

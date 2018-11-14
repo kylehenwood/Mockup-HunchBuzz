@@ -24,10 +24,14 @@ html {
   background: $color-blue-700;
 }
 
+
+// ---
+// Reusable content sections
+// ---
 .layout__section {
-  padding: 80px 24px;
+  padding: 80px 20px;
   @include screen-mob {
-    padding: 40px 24px;
+    padding: 64px 20px;
   }
 }
 .layout__section--white {
@@ -41,16 +45,22 @@ html {
 }
 
 
+// ---
+// Custom plan section
+// ---
 .layout__plans {
-  padding: 80px 24px 0;
+  padding: 80px 20px 0;
   background: white;
   @include screen-med {
-    padding: 0px 24px 40px;
+    padding: 0px 20px 40px;
     background: $color-blue-700;
   }
 }
 
 
+// ---
+// Quote container section
+// ---
 .layout__quote {
   position: relative;
   padding: 0 20px;
@@ -97,13 +107,11 @@ html {
 }
 
 
-
+// ---
+// Footer section
+// ---
 .layout__footer {
-  padding: 0 24px;
+  padding: 0 20px;
   width: 100%;
   background: $color-grey-100;
-  overflow: hidden;
-  @include screen-mob {
-    padding: 0 20px;
-  }
 }

@@ -1,0 +1,32 @@
+// ---
+// Brainstorm together signup section
+// ---
+
+.brainstorm {
+  max-width: 480px;
+  padding: 40px 0;
+  margin: 0 auto;
+  text-align: center;
+  @include screen-med {
+    padding: 20px 0;
+  }
+}
+.brainstorm__title {
+  color: white;
+  text-align: center;
+  margin: 0 0 24px;
+}
+.brainstorm__actions {
+  display: inline-block;
+}
+.brainstorm__signup,
+.brainstorm__demo {
+  float: left;
+  display: block;
+  padding: 0 8px;
+  width: 216px;
+  @include screen-mob {
+    width: 100%;
+    padding: 8px 0;
+  }
+}
