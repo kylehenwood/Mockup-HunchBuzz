@@ -1,5 +1,7 @@
 .feature-primary {
   margin: -160px -8px 72px;
+  display: flex;
+  flex-wrap: wrap;
   @include screen-med {
     margin: 8px 0;
   }
@@ -12,13 +14,15 @@
     width: auto;
     float: none;
     padding: 0;
-    margin: 8px 0;
+    margin: 16px 0;
   }
 }
 
 
 .feature-secondary {
   margin: -8px;
+  display: flex;
+  flex-wrap: wrap;
   @include screen-med {
     margin: 0;
   }
@@ -31,7 +35,7 @@
     width: auto;
     float: none;
     padding: 0;
-    margin: 8px 0;
+    margin: 16px 0;
   }
 }
 
@@ -41,16 +45,17 @@
 // primary-feature
 .primary-feature {
   position: relative;
-  height: 280px;
   background: white;
+  height: 100%;
+  width: 100%;
   padding: 32px 24px;
   border-radius: 8px;
   box-shadow: $shadow-200;
   overflow: hidden;
   @include screen-med {
     height: auto;
-    box-shadow: inset 0 0 0 2px $color-grey-300;
-    padding: 24px 24px 24px 104px;
+    box-shadow: none;
+    padding: 0 0 0 80px;;
   }
 }
 .primary-feature__title {
@@ -64,28 +69,20 @@
   line-height: 1.6;
   color: $color-grey-700;
 }
-.primary-feature__image {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 64px;
-  background: $color-grey-100;
-  @include screen-med {
-    display: none;
-  }
-}
+
 .primary-feature__icon {
-  display: none;
-  position: absolute;
   top: 24px;
   left: 24px;
   background: $color-grey-500;
   width: 56px;
   height: 56px;
   border-radius: 50%;
+  margin: 0 0 16px;
   @include screen-med {
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
   }
 }
 
@@ -93,13 +90,15 @@
 // secondary-feature
 .secondary-feature {
   position: relative;
-  height: 168px;
   background: white;
+  height: 100%;
+  width: 100%;
   border-radius: 8px;
   box-shadow: inset 0 0 0 2px $color-grey-300;
   padding: 24px 24px 24px 104px;
   @include screen-med {
-    height: auto;
+    padding: 0 0 0 80px;
+    box-shadow: none;
   }
 }
 .secondary-feature__title {
@@ -121,4 +120,8 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
+  @include screen-med {
+    top: 0;
+    left: 0;
+  }
 }

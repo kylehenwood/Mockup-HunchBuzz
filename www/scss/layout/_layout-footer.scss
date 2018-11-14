@@ -1,18 +1,136 @@
 // footer
-.footer {
+
+.footer-content {
   position: relative;
-  padding: 12px 0;
-  color: $color-grey-600;
-  font-weight: 600;
-  @include font-size(1.6);
+  padding: 64px 0;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $color-grey-300;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+  }
 }
-.footer__copyright {
+.footer-content__left {
   float: left;
-  line-height: 32px;
+  padding: 0 80px 0 0;
+  @include screen-med {
+    padding: 0;
+    margin: 0 0 32px;
+    float: none;
+  }
 }
-.footer__social {
+.footer-content__right {
   float: right;
-  @include screen-mob {
-    display: none;
+  @include screen-med {
+    float: none;
+  }
+}
+
+.footer-content__heading {
+  font-weight: 600;
+  margin: 0 0 16px;
+  &:after {
+    content: '';
+    display: block;
+    background: $color-grey-300;
+    width: 64px;
+    height: 2px;
+    margin: 8px 0 0;
+    border-radius: 2px;
+  }
+}
+.footer-content__link {
+  user-select: none;
+  padding: 4px 0;
+  display: block;
+  font-size: 14px;
+  line-height: 1.6;
+  color: $color-blue-500;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: $color-blue-700;
+  }
+  &:active {
+    color: $color-blue-700;
+    transform: translateY(2px);
+  }
+  @include screen-med {
+    font-size: 14px;
+    padding: 8px 0;
+    border-bottom: 1px solid $color-grey-300;
+  }
+}
+
+.footer-content__social {
+  float: left;
+  width: 56px;
+  height: 56px;
+  background: $color-grey-300;
+  border-radius: 50%;
+  margin: 0 16px 0 0;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+
+// footer secondary
+.footer-secondary {
+  position: relative;
+  padding: 24px 0;
+}
+.footer-secondary__copyright {
+  float: left;
+  line-height: 24px;
+  color: $color-grey-600;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-secondary__legal {
+  float: right;
+  @include screen-med {
+    width: 100%;
+    margin: 0 0 16px;
+  }
+}
+
+.footer-secondary__link {
+  float: left;
+  line-height: 24px;
+  font-size: 14px;
+  user-select: none;
+  display: block;
+  color: $color-blue-500;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: $color-blue-700;
+  }
+  &:active {
+    color: $color-blue-700;
+    transform: translateY(2px);
+  }
+}
+.footer-secondary__seperator {
+  float: left;
+  display: block;
+  width: 24px;
+  height: 24px;
+  padding: 6px;
+  margin: 0 16px;
+  &:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $color-grey-400;
   }
 }

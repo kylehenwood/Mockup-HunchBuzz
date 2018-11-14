@@ -51,7 +51,7 @@
 
 
 <!-- quote section -->
-<div class="layout__section layout__section--grey">
+<div class="layout__quote layout__quote--white-to-grey">
   <div class="quote-card">
     <div class="quote-card__logo"></div>
     <div class="quote-card__icon"></div>

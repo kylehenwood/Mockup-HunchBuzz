@@ -5,26 +5,23 @@
     <div class="feature-primary clearfix">
       <div class="feature-primary__item">
         <div class="primary-feature">
+          <div class="primary-feature__icon"></div>
           <h4 class="primary-feature__title">Simple to Use.</h4>
           <p class="primary-feature__desc">Quickly create and contribute to ideas with no training required. Challenge and idea KanBan cards with custom defined images. Admins manage users, security, challenges, design and more through a simple dashboard.</p>
-          <div class="primary-feature__image"></div>
-          <div class="primary-feature__icon"></div>
         </div>
       </div>
       <div class="feature-primary__item">
         <div class="primary-feature">
+          <div class="primary-feature__icon"></div>
           <h4 class="primary-feature__title">Hosted in the Cloud.</h4>
           <p class="primary-feature__desc">HunchBuzz is a cloud hosted service - that means no software for you to deploy and manage. A typical implementation can be up and running within minutes rather than days.</p>
-          <div class="primary-feature__image"></div>
-          <div class="primary-feature__icon"></div>
         </div>
       </div>
       <div class="feature-primary__item">
         <div class="primary-feature">
+          <div class="primary-feature__icon"></div>
           <h4 class="primary-feature__title">Make it your own.</h4>
           <p class="primary-feature__desc">Upload your logo and choose colors that match your brand perfectly. Display custom pages to provide rich context. Use the built in blog and news capabilities to communicate with your community.</p>
-          <div class="primary-feature__image"></div>
-          <div class="primary-feature__icon"></div>
         </div>
       </div>
     </div>
@@ -78,7 +75,9 @@
 </div>
 
 
-<div class="layout__section layout__section--blue">
+
+<!-- quote -->
+<div class="layout__quote layout__quote--white-to-blue">
   <div class="quote-card">
     <div class="quote-card__logo"></div>
     <div class="quote-card__icon"></div>
@@ -87,5 +86,30 @@
       <div class="quote-card__author">Janet Fortune</div>
       <div class="quote-card__author-role">Assistant Director Human Resources, City of London UK</div>
     </div>
+  </div>
+</div>
+
+
+
+
+<!-- brainstorming -->
+<div class="layout__section layout__section--blue">
+  <div class="brainstorm">
+  	<h2 class="brainstorm__title">Start brainstorming together!</h2>
+  	<div class="brainstorm__actions">
+      <div class="brainstorm__signup">
+        <a class="button button--56 button--white button--shadow">
+          <div class="button-inner button-inner--icon-after">
+            <div class="button-inner__text">Sign up</div>
+            <div class="button-inner__icon-after">
+              <span class="flat-icon icon--16 icon--arrow-right icon--blue"></span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="brainstorm__demo">
+        <a class="button button--56 button--transparent-stroke">Request demo</a>
+      </div>
+  	</div>
   </div>
 </div>

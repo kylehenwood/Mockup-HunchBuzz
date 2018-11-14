@@ -58,7 +58,8 @@
 </div>
 
 
-<div class="layout__section layout__section--blue">
+<!-- quote section -->
+<div class="layout__quote layout__quote--grey-to-blue">
   <div class="quote-card">
     <div class="quote-card__logo"></div>
     <div class="quote-card__icon"></div>
@@ -69,3 +70,8 @@
     </div>
   </div>
 </div>
+
+
+
+<!-- signup -->
+<div class="layout__section layout__section--blue"></div>

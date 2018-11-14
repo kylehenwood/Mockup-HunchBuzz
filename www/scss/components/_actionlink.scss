@@ -1,0 +1,37 @@
+// -----------------
+// actionlink component
+// -----------------
+.actionlink {
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  position: relative;
+  padding: 0 24px 0 0;
+  color: $color-blue-500;
+  &:hover {
+    color: $color-blue-700;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+  &:hover,
+  &:active {
+    .actionlink__icon {
+      right: -4px;
+    }
+  }
+}
+.actionlink__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 24px;
+  width: 16px;
+  padding: 4px 0;
+  transition: 80ms ease-in-out;
+}
+.actionlink__text {
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: bold;
+}

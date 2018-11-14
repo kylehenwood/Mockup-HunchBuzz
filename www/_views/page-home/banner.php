@@ -8,7 +8,12 @@
         <div class="home-banner__actions">
           <div class="home-banner__signup">
             <a class="button button--56 button--white button--shadow">
-              Sign up
+              <div class="button-inner button-inner--icon-after">
+                <div class="button-inner__text">Sign up</div>
+                <div class="button-inner__icon-after">
+                  <span class="flat-icon icon--16 icon--arrow-right icon--blue"></span>
+                </div>
+              </div>
             </a>
           </div>
           <div class="home-banner__demo">
@@ -24,6 +29,7 @@
           <div class="screenshot__video">
             Learn / Watch how HunchBuzz can help you {{PlayButton}}
           </div>
+          <img class="screenshot__image" src="images/mockup-screenshot.png" />
         </div>
       </div>
 
