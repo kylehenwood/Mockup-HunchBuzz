@@ -10,13 +10,21 @@ $(document).ready(function(){
 
 // mobile navigation
 function mobileNavigation() {
-  var trigger = $('.js-mobile-button');
+  var trigger = $('.js-mobile-toggle');
   var navigation = $('.js-mobile-navigation');
-  var header = $('.js-mobile-header');
 
   trigger.click(function(){
-    header.toggleClass('navigation-mobile--open');
-    navigation.toggleClass('navigation-mobile__navigation--visible');
+    navigation.toggle();
+  });
+
+  $(document).on('click',function(e){
+    if(navigation.visible) {
+      navigation.hide();
+    }
+  });
+
+  navigation.click(function(e){
+    e.stopPropagation();
   });
 }
 
@@ -54,8 +62,12 @@ function navigationSelected() {
     case 'pricing':
       navSelected = navPlans;
       break;
+    default:
+      navSelected = null;
   }
-  navSelected.addClass('header-navigation__item--selected');
+  if (navSelected!= null) {
+    navSelected.addClass('header-navigation__item--selected');
+  }
 }
 
 

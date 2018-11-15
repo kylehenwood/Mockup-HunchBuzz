@@ -27,9 +27,9 @@
       </div>
       <div class="footer-content__right clearfix">
         <h4 class="footer-content__heading">Follow us</h4>
-        <a class="footer-content__social"><span class="social-icon icon--16 icon--facebook"></span></a>
-        <a class="footer-content__social"><span class="social-icon icon--16 icon--twitter"></span></a>
-        <a class="footer-content__social"><span class="social-icon icon--16 icon--linkedin"></span></a>
+        <a class="footer-content__social footer-content__social--facebook"><span class="social-icon icon--16 icon--facebook"></span></a>
+        <a class="footer-content__social footer-content__social--twitter"><span class="social-icon icon--16 icon--twitter"></span></a>
+        <a class="footer-content__social footer-content__social--linkedin"><span class="social-icon icon--16 icon--linkedin"></span></a>
       </div>
     </div>
 

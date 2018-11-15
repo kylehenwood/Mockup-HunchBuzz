@@ -1,0 +1,69 @@
+// ---
+// Mobile navigation
+// ---
+
+.mobile-navigation {
+  position: relative;
+  padding: 24px;
+  background: white;
+  box-shadow: $shadow-300;
+  border-radius: 8px;
+  animation-name: mobile-navigation;
+  animation-duration: 200ms;
+  animation-direction: fowards;
+  transform-origin: 100% 0;
+}
+
+@keyframes mobile-navigation {
+  000% {
+    opacity: 0.4;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.mobile-navigation__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  width: 64px;
+  height: 64px;
+  background: red;
+}
+.mobile-navigation__item {
+  position: relative;
+  display: block;
+  padding: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.6;
+  color: $color-grey-700;
+  border-radius: 4px;
+  &:hover {
+    background: $color-grey-300;
+  }
+}
+.mobile-navigation__item--selected:before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: -2px;
+  width: 4px;
+  height: 4px;
+  background: $color-blue-700;
+  border-radius: 2px;
+}
+
+.mobile-navigation__actions {
+  padding: 24px 0 0;
+  border-top: 1px solid $color-grey-300;
+  margin: 24px 0 0;
+}
+.mobile-navigation__login {
+  margin: 0 0 16px;
+}
+.mobile-navigation__signup {}

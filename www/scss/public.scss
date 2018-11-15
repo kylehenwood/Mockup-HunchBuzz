@@ -30,9 +30,8 @@ svg {
 // _chrome
 @import "layout/_layout";
 @import "layout/_layout-header";
-@import "layout/_layout-header--mobile";
 @import "layout/_layout-footer";
-
+@import "layout/_mobile-navigation";
 
 // _components
 @import "components/_typography";

@@ -96,11 +96,11 @@
 // secondary-feature
 .secondary-feature {
   position: relative;
-  background: white;
+  //background: white;
   height: 100%;
   width: 100%;
-  border-radius: 8px;
-  box-shadow: inset 0 0 0 2px $color-grey-300;
+  //border-radius: 8px;
+  //box-shadow: inset 0 0 0 2px $color-grey-300;
   padding: 24px 24px 24px 104px;
   @include screen-med {
     padding: 0 0 0 80px;

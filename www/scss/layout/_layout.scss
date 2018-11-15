@@ -14,7 +14,6 @@ html {
   //padding: 56px 0;
 }
 
-
 //layout__children
 .layout__header {
   background: $color-blue-700;
@@ -25,13 +24,23 @@ html {
   background: $color-blue-700;
 }
 
+.layout__mobile-navigation {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 12px;
+}
+
 
 // ---
 // Reusable content sections
 // ---
 .layout__section {
   padding: 80px 20px;
-  @include screen-mob {
+  @include screen-med {
     padding: 64px 20px;
   }
 }
@@ -45,6 +54,16 @@ html {
   background: $color-blue-700;
 }
 
+
+// ---
+// Customer logo container
+// ---
+.layout__customers {
+  padding: 80px 0;
+  @include screen-med {
+    padding: 64px 0;
+  }
+}
 
 // ---
 // Custom plan section

@@ -1,14 +1,14 @@
-<div class="layout__section layout__section--white">
+<div class="layout__customers">
   <div class="customers">
     <div class="customers__title">Trusted worldwide</div>
     <ul class="customers__list clearfix">
-      <li class="customers__item"></li>
-      <li class="customers__item"></li>
-      <li class="customers__item"></li>
-      <li class="customers__item"></li>
-      <li class="customers__item"></li>
-      <li class="customers__item"></li>
-      <li class="customers__item"></li>
+      <li class="customers__item"><img src="images/placeholder-customer.png" width="172px" height="120px" alt="customername"></li>
+      <li class="customers__item"><img src="images/placeholder-customer.png" width="172px" height="120px" alt="customername"></li>
+      <li class="customers__item"><img src="images/placeholder-customer.png" width="172px" height="120px" alt="customername"></li>
+      <li class="customers__item"><img src="images/placeholder-customer.png" width="172px" height="120px" alt="customername"></li>
+      <li class="customers__item"><img src="images/placeholder-customer.png" width="172px" height="120px" alt="customername"></li>
+      <li class="customers__item"><img src="images/placeholder-customer.png" width="172px" height="120px" alt="customername"></li>
+      <li class="customers__item"><img src="images/placeholder-customer.png" width="172px" height="120px" alt="customername"></li>
     </ul>
     <div class="customers__viewall">
       <a class="actionlink">

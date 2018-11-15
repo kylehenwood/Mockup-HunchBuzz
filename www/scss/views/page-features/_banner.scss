@@ -1,7 +1,7 @@
 .features-banner {
   padding: 80px 20px 200px;
   @include screen-med {
-    padding: 80px 20px;
+    padding: 64px 20px;
   }
 }
 
@@ -25,7 +25,7 @@
   font-weight: normal;
   margin: 0 0 16px;
   @include screen-med {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
