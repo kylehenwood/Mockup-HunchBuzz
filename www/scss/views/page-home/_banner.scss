@@ -15,6 +15,9 @@
   }
   @include screen-med {
     padding: 80px 20px 48px;
+    &:after {
+      height: 160px;
+    }
   }
 }
 .home-banner__content {
@@ -79,6 +82,9 @@
   width: 240px;
   height: 240px;
   transform: translateX(-50%);
+  @include screen-med {
+    bottom: 0;
+  }
 }
 
 
@@ -138,11 +144,6 @@
   position: relative;
   height: 100%;
   width: 100%;
-  &:hover {
-    .screenshot__video {
-      padding: 48px 0;
-    }
-  }
 }
 .screenshot__video {
   position: absolute;
@@ -153,7 +154,40 @@
   font-weight: bold;
   color: white;
   text-align: center;
-  padding: 48px 0 24px;
+  padding: 64px 0;
   background-image: linear-gradient(to bottom,transparent, rgba(black,0.5));
   transition: 80ms ease-out;
+}
+
+
+.screenshot-button {
+  user-select: none;
+  position: relative;
+  transition: 80ms ease-out;
+  display: inline-block;
+  border-radius: 32px;
+  padding: 16px 32px 16px 56px;
+  background: white;
+  color: $color-blue-500;
+  box-shadow: $shadow-300;
+  &:hover {
+    background: $color-grey-300;
+    color: $color-blue-700;
+    box-shadow: $shadow-400;
+  }
+  &:active {
+    background: $color-grey-300;
+    box-shadow: $shadow-200;
+  }
+}
+.screenshot-button__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px 12px 16px 20px;
+}
+.screenshot-button__text {
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 14px;
 }

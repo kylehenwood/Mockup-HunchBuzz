@@ -87,11 +87,12 @@
   left: -24px;
   height: 48px;
   width: 48px;
-  background: $color-purple-500;
+  background: $color-blue-500;
   border-radius: 24px;
   box-shadow: 0 0 0 2px white;
   z-index: 5;
   color: white;
+  font-family: $font-family-heading;
   font-weight: bold;
   font-size: 18px;
   text-align: center;
@@ -124,9 +125,59 @@
     border-radius: 8px 8px 0 0;
   }
 }
-.hiw-step__content {
-  height: 440px;
+.hiw-step__content {}
+
+.hiw-content {
+  padding: 32px;
   @include screen-med {
-    height: 240px;
+    padding: 24px;
+  }
+}
+.hiw-content__heading {
+  font-size: 24px;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+.hiw-content__description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+.hiw-content__list {
+  margin: 0 0 24px;
+}
+.hiw-content__list-item {
+  position: relative;
+  padding: 0 0 0 24px;
+}
+.hiw-content__list-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  padding: 8px 0;
+  color: $color-grey-500;
+}
+.hiw-content__list-text {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.hiw-content__example-heading {
+  font-size: 12px;
+  line-height: 1.6;
+  color: $color-grey-600;
+  margin: 0 0 8px;
+}
+.hiw-content__example {
+  margin: 0 0 8px;
+  padding: 6px 16px;
+  font-size: 16px;
+  line-height: 1.6;
+  background: $color-grey-300;
+  border-radius: 40px;
+  &:last-child {
+    margin: 0;
   }
 }

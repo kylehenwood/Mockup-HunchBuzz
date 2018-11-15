@@ -86,7 +86,8 @@
   background-position: center left;
   background-repeat: no-repeat;
   display: block;
-  opacity: 1;
+  opacity: 0.8;
+  transition: 80ms ease-out;
   &:hover,
   &:active {
     opacity: 1;
@@ -94,6 +95,9 @@
   &:active {
     transform: translateY(2px);
   }
+}
+.header-logo--selected {
+  opacity: 1;
 }
 
 
@@ -112,6 +116,7 @@
   font-weight: 600;
   color: rgba(white,0.8);
   padding: 8px 16px;
+  transition: 80ms ease-out;
   &:hover,
   &:active {
     color: white;

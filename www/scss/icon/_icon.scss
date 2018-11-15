@@ -31,6 +31,18 @@
   }
 }
 
+.icon--24 {
+  &,&:before {
+    display: block;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+
 //--
 
 
@@ -86,6 +98,7 @@
 .icon--menu:before {content: '\e53e';}
 .icon--maximize:before {content: '\e58e';}
 .icon--dropdown-arrow:before {content: '\e5a5';}
+.icon--play:before {content:'\';}
 
 
 .icon--trash:before {content: '\e481';}

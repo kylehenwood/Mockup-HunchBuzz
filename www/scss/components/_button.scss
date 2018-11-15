@@ -6,6 +6,7 @@
   @include noselect;
   @include nowrap;
   cursor: pointer;
+  transition: 80ms ease-out;
   font-family: $font-family;
   font-weight: 600;
   font-size: 16px;
@@ -23,7 +24,7 @@
   &:focus {}
   &.button--hover,
   &:hover {
-    box-shadow: $shadow-100;
+    box-shadow: $shadow-200;
   }
   &.button--active,
   &:active {

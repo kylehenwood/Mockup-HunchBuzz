@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -297,6 +298,14 @@ nowrap,
   line-height: 16px;
   text-align: center; }
 
+.icon--24, .icon--24:before {
+  display: block;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center; }
+
 .social-icon:before {
   font-family: 'Flaticons Social'; }
 
@@ -364,6 +373,9 @@ nowrap,
 .icon--dropdown-arrow:before {
   content: '\e5a5'; }
 
+.icon--play:before {
+  content: '\'; }
+
 .icon--trash:before {
   content: '\e481'; }
 
@@ -409,6 +421,7 @@ html {
   background: #1976D2; }
 
 .layout__mobile-navigation {
+  user-select: none;
   display: none;
   position: absolute;
   top: 0;
@@ -572,11 +585,15 @@ html {
   background-position: center left;
   background-repeat: no-repeat;
   display: block;
-  opacity: 1; }
+  opacity: 0.8;
+  transition: 80ms ease-out; }
   .header-logo:hover, .header-logo:active {
     opacity: 1; }
   .header-logo:active {
     transform: translateY(2px); }
+
+.header-logo--selected {
+  opacity: 1; }
 
 .header-navigation {
   text-align: center;
@@ -590,7 +607,8 @@ html {
   font-size: 16px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
-  padding: 8px 16px; }
+  padding: 8px 16px;
+  transition: 80ms ease-out; }
   .header-navigation__item:hover, .header-navigation__item:active {
     color: white; }
   .header-navigation__item:active {
@@ -704,7 +722,8 @@ html {
   padding: 20px;
   background: #E0E0E0;
   border-radius: 50%;
-  margin: 0 16px 0 0; }
+  margin: 0 16px 0 0;
+  transition: 80ms ease-out; }
   .footer-content__social:last-child {
     margin: 0; }
   .footer-content__social:hover {
@@ -907,6 +926,7 @@ html {
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
+  transition: 80ms ease-out;
   font-family: "Open Sans", Open-Sans, helvetica, arial;
   font-weight: 600;
   font-size: 16px;
@@ -919,7 +939,7 @@ html {
   outline: none;
   text-decoration: none; }
   .button.button--hover, .button:hover {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
   .button.button--active, .button:active {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
@@ -1415,7 +1435,9 @@ html {
     background: white; }
   @media screen and (max-width: 960px) {
     .home-banner {
-      padding: 80px 20px 48px; } }
+      padding: 80px 20px 48px; }
+      .home-banner:after {
+        height: 160px; } }
 
 .home-banner__content {
   position: relative;
@@ -1472,6 +1494,9 @@ html {
   width: 240px;
   height: 240px;
   transform: translateX(-50%); }
+  @media screen and (max-width: 960px) {
+    .home-banner__pulse {
+      bottom: 0; } }
 
 .pulse {
   pointer-events: none;
@@ -1521,8 +1546,6 @@ html {
   position: relative;
   height: 100%;
   width: 100%; }
-  .screenshot:hover .screenshot__video {
-    padding: 48px 0; }
 
 .screenshot__video {
   position: absolute;
@@ -1533,9 +1556,38 @@ html {
   font-weight: bold;
   color: white;
   text-align: center;
-  padding: 48px 0 24px;
+  padding: 64px 0;
   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
   transition: 80ms ease-out; }
+
+.screenshot-button {
+  user-select: none;
+  position: relative;
+  transition: 80ms ease-out;
+  display: inline-block;
+  border-radius: 32px;
+  padding: 16px 32px 16px 56px;
+  background: white;
+  color: #2196F3;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  .screenshot-button:hover {
+    background: #E0E0E0;
+    color: #1976D2;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .screenshot-button:active {
+    background: #E0E0E0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.screenshot-button__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px 12px 16px 20px; }
+
+.screenshot-button__text {
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 14px; }
 
 .customers__title {
   font-family: "Open Sans", Open-Sans, helvetica, arial;
@@ -1561,14 +1613,16 @@ html {
   width: 172px;
   overflow: hidden;
   padding: 8px;
-  max-width: calc(100%/7);
-  min-width: 160px; }
+  max-width: calc(100%/7); }
   .customers__item:first-child {
     margin-left: 12px; }
   .customers__item:last-child {
     margin-right: 12px; }
   .customers__item img {
     border-radius: 4px; }
+  @media screen and (max-width: 960px) {
+    .customers__item {
+      min-width: 160px; } }
 
 .customers__viewall {
   text-align: center; }
@@ -1955,11 +2009,12 @@ html {
   left: -24px;
   height: 48px;
   width: 48px;
-  background: #9C27B0;
+  background: #2196F3;
   border-radius: 24px;
   box-shadow: 0 0 0 2px white;
   z-index: 5;
   color: white;
+  font-family: "asap-bold", "Open Sans", Open-Sans, helvetica, arial;
   font-weight: bold;
   font-size: 18px;
   text-align: center;
@@ -1991,11 +2046,56 @@ html {
       width: 100%;
       border-radius: 8px 8px 0 0; } }
 
-.hiw-step__content {
-  height: 440px; }
+.hiw-content {
+  padding: 32px; }
   @media screen and (max-width: 960px) {
-    .hiw-step__content {
-      height: 240px; } }
+    .hiw-content {
+      padding: 24px; } }
+
+.hiw-content__heading {
+  font-size: 24px;
+  line-height: 1.6;
+  margin: 0 0 16px; }
+
+.hiw-content__description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 16px; }
+
+.hiw-content__list {
+  margin: 0 0 24px; }
+
+.hiw-content__list-item {
+  position: relative;
+  padding: 0 0 0 24px; }
+
+.hiw-content__list-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  padding: 8px 0;
+  color: #9E9E9E; }
+
+.hiw-content__list-text {
+  font-size: 16px;
+  line-height: 32px; }
+
+.hiw-content__example-heading {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #757575;
+  margin: 0 0 8px; }
+
+.hiw-content__example {
+  margin: 0 0 8px;
+  padding: 6px 16px;
+  font-size: 16px;
+  line-height: 1.6;
+  background: #E0E0E0;
+  border-radius: 40px; }
+  .hiw-content__example:last-child {
+    margin: 0; }
 
 .plans-banner {
   padding: 120px 0 240px; }

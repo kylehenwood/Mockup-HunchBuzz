@@ -25,6 +25,7 @@ html {
 }
 
 .layout__mobile-navigation {
+  user-select: none;
   display: none;
   position: absolute;
   top: 0;
