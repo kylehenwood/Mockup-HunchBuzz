@@ -38,7 +38,14 @@
 // Home content + illustration blocks
 // -----------------
 .home-content {}
-.home-content__section {}
+.home-content__section {
+  @include screen-med {
+    margin: 0 0 40px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
 
 //-
 .home-section {}
@@ -63,7 +70,7 @@
   width: 368px;
   height: 368px;
   @include screen-med {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     float: none!important;
   }
@@ -75,6 +82,7 @@
   min-height: 360px;
   padding: 24px 0;
   @include screen-med {
+    min-height: auto;
     padding: 0;
     margin: 0!important;
   }

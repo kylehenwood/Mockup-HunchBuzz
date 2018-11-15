@@ -10,10 +10,10 @@
     <div class="footer-content clearfix">
       <div class="footer-content__left">
         <h4 class="footer-content__heading">Product</h4>
-        <a class="footer-content__link">Home</a>
-        <a class="footer-content__link">Features</a>
-        <a class="footer-content__link">How it works</a>
-        <a class="footer-content__link">Plans</a>
+        <a class="footer-content__link" href="index.php">Home</a>
+        <a class="footer-content__link" href="index.php?pageID=features">Features</a>
+        <a class="footer-content__link" href="index.php?pageID=how-it-works">How it works</a>
+        <a class="footer-content__link" href="index.php?pageID=plans">Plans</a>
       </div>
       <div class="footer-content__left">
         <h4 class="footer-content__heading">Resources</h4>
@@ -27,9 +27,9 @@
       </div>
       <div class="footer-content__right clearfix">
         <h4 class="footer-content__heading">Follow us</h4>
-        <a class="footer-content__social"></a>
-        <a class="footer-content__social"></a>
-        <a class="footer-content__social"></a>
+        <a class="footer-content__social"><span class="social-icon icon--16 icon--facebook"></span></a>
+        <a class="footer-content__social"><span class="social-icon icon--16 icon--twitter"></span></a>
+        <a class="footer-content__social"><span class="social-icon icon--16 icon--linkedin"></span></a>
       </div>
     </div>
 

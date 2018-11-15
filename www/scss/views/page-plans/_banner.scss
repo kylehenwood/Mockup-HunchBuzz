@@ -13,6 +13,9 @@
   line-height: 1.2;
   font-weight: normal;
   margin: 0 0 16px;
+  @include screen-med {
+    font-size: 32px;
+  }
 }
 
 .plans-banner__border {

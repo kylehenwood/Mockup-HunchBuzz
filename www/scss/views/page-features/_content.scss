@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   @include screen-med {
-    margin: 8px 0;
+    margin: 0 0 40px;
   }
 }
 .feature-primary__item {
@@ -14,7 +14,10 @@
     width: auto;
     float: none;
     padding: 0;
-    margin: 16px 0;
+    margin: 0 0 40px;
+    &:last-child {
+      margin: 0;
+    }
   }
 }
 
@@ -35,7 +38,10 @@
     width: auto;
     float: none;
     padding: 0;
-    margin: 16px 0;
+    margin: 0 0 40px;
+    &:last-child {
+      margin: 0;
+    }
   }
 }
 

@@ -5,7 +5,7 @@
 		<ul class="hiw-container">
 			<li class="hiw-container__step">
         <div class="hiw-step hiw-step--selected">
-          <div class="hiw-step__indicator"></div>
+          <div class="hiw-step__indicator">1</div>
           <div class="hiw-step__image"></div>
           <div class="hiw-step__content"></div>
         </div>
@@ -21,7 +21,7 @@
       </li>
 			<li class="hiw-container__step">
         <div class="hiw-step">
-          <div class="hiw-step__indicator"></div>
+          <div class="hiw-step__indicator">2</div>
           <div class="hiw-step__image"></div>
           <div class="hiw-step__content"></div>
         </div>
@@ -37,7 +37,7 @@
       </li>
 			<li class="hiw-container__step">
         <div class="hiw-step">
-          <div class="hiw-step__indicator"></div>
+          <div class="hiw-step__indicator">3</div>
           <div class="hiw-step__image"></div>
           <div class="hiw-step__content"></div>
         </div>

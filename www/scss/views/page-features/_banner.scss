@@ -1,5 +1,5 @@
 .features-banner {
-  padding: 120px 20px 240px;
+  padding: 80px 20px 200px;
   @include screen-med {
     padding: 80px 20px;
   }
@@ -7,8 +7,13 @@
 
 .features-banner__content {
   margin: 0 440px 0 0;
+  min-height: 368px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   @include screen-med {
     margin: 0;
+    min-height: auto;
   }
 }
 
@@ -46,16 +51,19 @@
 .features-banner__signup,
 .features-banner__demo {
   float: left;
+  min-width: 216px;
 }
 .features-banner__demo {
   padding: 0 0 0 16px;
+  @include screen-mob {
+    display: none;
+  }
 }
 
 .features-banner__illustration {
   float: right;
   width: 368px;
   height: 368px;
-  margin: -56px 0 0;
   @include screen-med {
     display: none;
   }

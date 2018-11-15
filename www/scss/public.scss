@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+svg {
+  -webkit-backface-visibility: hidden;
+}
+
 
 // _shared imports
 @import "shared/_mixin";
