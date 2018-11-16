@@ -41,20 +41,11 @@
   left: 240px;
   width: 64px;
   height: 64px;
+  padding: 16px;
   border-radius: 32px;
   background: white;
   box-shadow: $shadow-100;
   transform: translate(-50%,-50%);
-  &:before {
-    content: '"';
-    display: block;
-    color: $color-grey-600;
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 64px;
-    text-align: center;
-    width: 64px;
-  }
   @include screen-med {
     top: auto;
     left: 50%;

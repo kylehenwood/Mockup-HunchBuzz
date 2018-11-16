@@ -98,7 +98,14 @@
 <div class="layout__quote layout__quote--white-to-blue">
   <div class="quote-card">
     <div class="quote-card__logo"></div>
-    <div class="quote-card__icon"></div>
+    <div class="quote-card__icon">
+      <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="icon--quote" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <rect id="bounds" x="0" y="0" width="32" height="32"></rect>
+              <path d="M12.9248555,17.5317919 L12.9248555,27.1965318 L4,27.1965318 L4,19.566474 C4,15.4354321 4.49325133,12.445096 5.47976879,10.5953757 C6.77457295,8.12908208 8.82464879,6.26397549 11.6300578,5 L13.6647399,8.23699422 C11.969163,8.94605364 10.7206206,10.0019198 9.91907514,11.4046243 C9.11752971,12.8073288 8.67052069,14.8496976 8.57803468,17.5317919 L12.9248555,17.5317919 Z M27.2601156,17.5317919 L27.2601156,27.1965318 L18.3352601,27.1965318 L18.3352601,19.566474 C18.3352601,15.4354321 18.8285114,12.445096 19.8150289,10.5953757 C21.1098331,8.12908208 23.1599089,6.26397549 25.9653179,5 L28,8.23699422 C26.3044231,8.94605364 25.0558807,10.0019198 24.2543353,11.4046243 C23.4527898,12.8073288 23.0057808,14.8496976 22.9132948,17.5317919 L27.2601156,17.5317919 Z" fill="#757575"></path>
+          </g>
+      </svg>
+    </div>
     <div class="quote-card__content">
       <div class="quote-card__comment">The City of London worked closely with HunchBuzz to pilot a new way of engaging with our employees. We were delighted with the tremendous response both in terms of the number of ideas received and the sentiment of the overall feedback.</div>
       <div class="quote-card__author">Janet Fortune</div>

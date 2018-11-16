@@ -1293,19 +1293,11 @@ html {
   left: 240px;
   width: 64px;
   height: 64px;
+  padding: 16px;
   border-radius: 32px;
   background: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transform: translate(-50%, -50%); }
-  .quote-card__icon:before {
-    content: '"';
-    display: block;
-    color: #757575;
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 64px;
-    text-align: center;
-    width: 64px; }
   @media screen and (max-width: 960px) {
     .quote-card__icon {
       top: auto;
