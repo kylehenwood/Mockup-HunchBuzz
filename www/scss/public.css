@@ -558,21 +558,15 @@ html {
       display: none; } }
 
 .header__mobile-button {
+  cursor: pointer;
   display: none;
   position: absolute;
   top: 0;
   right: -20px;
-  padding: 16px 20px; }
-  .header__mobile-button:before {
-    pointer-events: none;
-    content: '';
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: white;
-    border-radius: 50%; }
-  .header__mobile-button:active:before {
-    background: black; }
+  padding: 18px 20px;
+  opacity: 0.8; }
+  .header__mobile-button:active, .header__mobile-button:hover {
+    opacity: 1; }
   @media screen and (max-width: 960px) {
     .header__mobile-button {
       display: block; } }
@@ -840,7 +834,10 @@ html {
   z-index: 5;
   width: 64px;
   height: 64px;
-  background: red; }
+  padding: 16px;
+  opacity: 0.8; }
+  .mobile-navigation__close:hover, .mobile-navigation__close:active {
+    opacity: 1; }
 
 .mobile-navigation__item {
   position: relative;
@@ -852,7 +849,7 @@ html {
   color: #616161;
   border-radius: 4px; }
   .mobile-navigation__item:hover {
-    background: #E0E0E0; }
+    color: #2196F3; }
 
 .mobile-navigation__item--selected:before {
   content: '';

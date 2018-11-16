@@ -34,22 +34,16 @@
   }
 }
 .header__mobile-button {
+  cursor: pointer;
   display: none;
   position: absolute;
   top: 0;
   right: -20px;
-  padding: 16px 20px;
-  &:before {
-    pointer-events: none;
-    content: '';
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: white;
-    border-radius: 50%;
-  }
-  &:active:before {
-    background: black;
+  padding: 18px 20px;
+  opacity: 0.8;
+  &:active,
+  &:hover {
+    opacity: 1;
   }
   @include screen-med {
     display: block;

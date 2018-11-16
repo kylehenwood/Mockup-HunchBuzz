@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon--close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon--close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="bounds" x="0" y="0" width="32" height="32"></rect>
+        <path d="M14.5,14.5 L14.5,7.5 C14.5,6.67157288 15.1715729,6 16,6 C16.8284271,6 17.5,6.67157288 17.5,7.5 L17.5,14.5 L24.5,14.5 C25.3284271,14.5 26,15.1715729 26,16 C26,16.8284271 25.3284271,17.5 24.5,17.5 L17.5,17.5 L17.5,24.5 C17.5,25.3284271 16.8284271,26 16,26 C15.1715729,26 14.5,25.3284271 14.5,24.5 L14.5,17.5 L7.5,17.5 C6.67157288,17.5 6,16.8284271 6,16 C6,15.1715729 6.67157288,14.5 7.5,14.5 L14.5,14.5 Z" fill="#1976D2" transform="translate(16.000000, 16.000000) rotate(45.000000) translate(-16.000000, -16.000000) "></path>
+    </g>
+</svg>
