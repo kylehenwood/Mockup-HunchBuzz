@@ -1,7 +1,7 @@
 <!-- Banner -->
 <div class="layout__banner">
 	<div class="center center--1120">
-		<div class="plans-banner">
+		<div class="plans-banner anim--in-bot">
 			<h1 class="plans-banner__title">Our plans.</h1>
 			<div class="plans-banner__border"></div>
 		</div>
@@ -15,7 +15,7 @@
 	<div class="center center--1040">
 
 		<div class="plans-container clearfix">
-			<div class="plans-container__plan">
+			<div class="plans-container__plan anim--in-bot anim--delay">
 				<!-- small -->
 				<div class="plan js-plan">
 					<div class="plan__clickable js-plan-trigger">
@@ -56,7 +56,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="plans-container__plan plans-container__plan--reccomended">
+			<div class="plans-container__plan plans-container__plan--reccomended anim--in-bot anim--delay">
 				<!-- medium -->
 				<div class="plan js-plan">
 					<div class="plan__clickable js-plan-trigger">
@@ -106,7 +106,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="plans-container__plan">
+			<div class="plans-container__plan anim--in-bot anim--delay">
 				<!-- large -->
 				<div class="plan js-plan">
 					<div class="plan__clickable js-plan-trigger">
@@ -167,7 +167,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="plans-container__enterprise">
+			<div class="plans-container__enterprise anim--in-bot anim--delay">
 				<div class="plan-enterprise">
 					<div class="plan-enterprise__mask">
 						<div class="plan-enterprise__title">Enterprise</div>

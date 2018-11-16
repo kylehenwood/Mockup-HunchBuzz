@@ -376,6 +376,30 @@ nowrap,
 .icon--play:before {
   content: '\'; }
 
+.icon--cloud-upload:before {
+  content: '\'; }
+
+.icon--paintbrush:before {
+  content: '\'; }
+
+.icon--lightbulb:before {
+  content: '\'; }
+
+.icon--mobilephone:before {
+  content: '\'; }
+
+.icon--key:before {
+  content: '\'; }
+
+.icon--users:before {
+  content: '\'; }
+
+.icon--chart:before {
+  content: '\'; }
+
+.icon--glasses:before {
+  content: '\'; }
+
 .icon--trash:before {
   content: '\e481'; }
 
@@ -1254,7 +1278,11 @@ html {
   left: 0;
   width: 240px;
   height: 100%;
-  background: black; }
+  background-color: black;
+  background-image: url("../images/quote--london-city.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
   @media screen and (max-width: 960px) {
     .quote-card__logo {
       top: auto;
@@ -1325,6 +1353,7 @@ html {
   .actionlink:hover {
     color: #1976D2; }
   .actionlink:active {
+    color: #1976D2;
     transform: translateY(2px); }
   .actionlink:hover .actionlink__icon, .actionlink:active .actionlink__icon {
     right: -4px; }
@@ -1371,6 +1400,227 @@ html {
     .brainstorm__demo {
       width: 100%;
       padding: 8px 0; } }
+
+.cssanimations .anim--hidden {
+  opacity: 0;
+  user-select: none;
+  pointer-events: none; }
+
+.cssanimations .anim--delay:nth-child(1) {
+  animation-delay: 000ms; }
+
+.cssanimations .anim--delay:nth-child(2) {
+  animation-delay: 040ms; }
+
+.cssanimations .anim--delay:nth-child(3) {
+  animation-delay: 080ms; }
+
+.cssanimations .anim--delay:nth-child(4) {
+  animation-delay: 120ms; }
+
+.cssanimations .anim--delay-40 {
+  animation-delay: 040ms; }
+
+.cssanimations .anim--delay-80 {
+  animation-delay: 080ms; }
+
+.cssanimations .anim--delay-120 {
+  animation-delay: 120ms; }
+
+.cssanimations .anim--delay-160 {
+  animation-delay: 160ms; }
+
+.cssanimations .anim--delay-200 {
+  animation-delay: 200ms; }
+
+.cssanimations .anim--delay-240 {
+  animation-delay: 240ms; }
+
+.cssanimations .anim--delay-280 {
+  animation-delay: 280ms; }
+
+.cssanimations .anim--delay-320 {
+  animation-delay: 320ms; }
+
+.cssanimations .anim--in-right {
+  opacity: 0;
+  animation-name: slide-in-right;
+  animation-duration: 400ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; }
+
+@keyframes slide-in-right {
+  000% {
+    opacity: 0;
+    transform: translateX(40px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.cssanimations .anim--in-left {
+  opacity: 0;
+  animation-name: slide-in-left;
+  animation-duration: 400ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; }
+
+@keyframes slide-in-left {
+  000% {
+    opacity: 0;
+    transform: translateX(-40px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.cssanimations .anim--in-top {
+  opacity: 0;
+  animation-name: slide-in-top;
+  animation-duration: 400ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; }
+
+@keyframes slide-in-top {
+  000% {
+    opacity: 0.4;
+    transform: translateY(-40px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.cssanimations .anim--in-bot {
+  opacity: 0;
+  animation-name: slide-in-bottom;
+  animation-duration: 400ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; }
+
+@keyframes slide-in-bottom {
+  000% {
+    opacity: 0;
+    transform: translateY(24px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.cssanimations .anim--out-top {
+  opacity: 1;
+  animation-name: slide-out-top;
+  animation-duration: 400ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards; }
+
+@keyframes slide-out-top {
+  000% {
+    opacity: 1;
+    transform: translateY(0); }
+  100% {
+    opacity: 0;
+    transform: translateY(-40px); } }
+
+.cssanimations .anim--out-bot {
+  opacity: 1;
+  animation-name: slide-out-bot;
+  animation-duration: 400ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards; }
+
+@keyframes slide-out-bot {
+  000% {
+    opacity: 1;
+    transform: translateY(0); }
+  100% {
+    opacity: 0;
+    transform: translateY(40px); } }
+
+.cssanimations .anim--out-left {
+  opacity: 1;
+  animation-name: slide-out-left;
+  animation-duration: 400ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards; }
+
+@keyframes slide-out-left {
+  000% {
+    opacity: 1;
+    transform: translateX(0); }
+  100% {
+    opacity: 0;
+    transform: translateX(-40px); } }
+
+.cssanimations .anim--out-right {
+  opacity: 1;
+  animation-name: slide-out-right;
+  animation-duration: 400ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards; }
+
+@keyframes slide-out-right {
+  000% {
+    opacity: 1;
+    transform: translateX(0); }
+  100% {
+    opacity: 0;
+    transform: translateX(40px); } }
+
+.cssanimations .anim--scale-up-in {
+  opacity: 0;
+  animation-name: scale-up-in;
+  animation-duration: 400ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; }
+
+@keyframes scale-up-in {
+  000% {
+    opacity: 0.4;
+    transform: scale(0.9); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+.cssanimations .anim--scale-up-out {
+  opacity: 0;
+  animation-name: scale-up-out;
+  animation-duration: 400ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; }
+
+@keyframes scale-up-out {
+  000% {
+    opacity: 1;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(1.1); } }
+
+.cssanimations .anim--scale-down-in {
+  opacity: 0;
+  animation-name: scale-down-in;
+  animation-duration: 320ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; }
+
+@keyframes scale-down-in {
+  000% {
+    opacity: 0.4;
+    transform: scale(1.1); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+.cssanimations .anim--scale-down-out {
+  opacity: 0;
+  animation-name: scale-down-out;
+  animation-duration: 400ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; }
+
+@keyframes scale-down-out {
+  000% {
+    opacity: 1;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(0.9); } }
 
 .svg-bulb__glow {
   animation-name: svg-bulb-glow;
@@ -1484,7 +1734,6 @@ html {
   margin: 0 auto;
   max-width: 800px;
   border-radius: 8px;
-  background: white;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
 
 .home-banner__pulse {
@@ -1602,7 +1851,6 @@ html {
   white-space: nowrap;
   padding: 32px 0;
   width: 100%;
-  margin: 0 0 32px;
   -webkit-overflow-scrolling: touch; }
   @media screen and (max-width: 960px) {
     .customers__list {
@@ -1610,16 +1858,22 @@ html {
 
 .customers__item {
   display: inline-block;
-  width: 172px;
-  overflow: hidden;
-  padding: 8px;
+  width: 176px;
+  padding: 8px 20px;
   max-width: calc(100%/7); }
-  .customers__item:first-child {
-    margin-left: 12px; }
-  .customers__item:last-child {
-    margin-right: 12px; }
   .customers__item img {
-    border-radius: 4px; }
+    transition: 80ms ease-out;
+    opacity: 0.8;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%); }
+    .customers__item img:hover, .customers__item img:active {
+      opacity: 1;
+      -webkit-filter: grayscale(0);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(0); }
+    .customers__item img:active {
+      transform: translateY(2px); }
   @media screen and (max-width: 960px) {
     .customers__item {
       min-width: 160px; } }
@@ -1867,7 +2121,9 @@ html {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  margin: 0 0 16px; }
+  margin: 0 0 16px;
+  color: white;
+  padding: 16px; }
   @media screen and (max-width: 960px) {
     .primary-feature__icon {
       position: absolute;
@@ -1903,7 +2159,9 @@ html {
   background: #2196F3;
   width: 56px;
   height: 56px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  color: white;
+  padding: 16px; }
   @media screen and (max-width: 960px) {
     .secondary-feature__icon {
       top: 0;
@@ -2039,12 +2297,23 @@ html {
   height: 100%;
   width: 240px;
   background: black;
-  border-radius: 8px 0 0 8px; }
+  border-radius: 8px 0 0 8px;
+  background: no-repeat center right;
+  background-size: cover; }
   @media screen and (max-width: 960px) {
     .hiw-step__image {
       height: 240px;
       width: 100%;
       border-radius: 8px 8px 0 0; } }
+
+.hiw-step__image--1 {
+  background-image: url("../images/hiw-1.png"); }
+
+.hiw-step__image--2 {
+  background-image: url("../images/hiw-2.png"); }
+
+.hiw-step__image--3 {
+  background-image: url("../images/hiw-3.png"); }
 
 .hiw-content {
   padding: 32px; }
@@ -2088,12 +2357,13 @@ html {
   margin: 0 0 8px; }
 
 .hiw-content__example {
+  display: inline-block;
   margin: 0 0 8px;
   padding: 6px 16px;
   font-size: 16px;
   line-height: 1.6;
-  background: #E0E0E0;
-  border-radius: 40px; }
+  background: #EEEEEE;
+  border-radius: 20px; }
   .hiw-content__example:last-child {
     margin: 0; }
 

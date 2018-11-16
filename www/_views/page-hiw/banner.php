@@ -3,7 +3,7 @@
 	<div class="layout__banner">
 
 		<div class="center center--1040">
-	    <div class="hiw-banner">
+	    <div class="hiw-banner anim--in-bot">
   			<h1 class="hiw-banner__title">How it works.</h1>
 				<div class="hiw-banner__border"></div>
 	    </div>

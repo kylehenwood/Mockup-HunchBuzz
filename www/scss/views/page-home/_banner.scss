@@ -69,10 +69,14 @@
   z-index: 5;
   margin: 0 auto;
   max-width: 800px;
-  //height: 520px;
   border-radius: 8px;
-  background: white;
   box-shadow: $shadow-500;
+  // &:before {
+  //   content: '';
+  //   display: block;
+  //   background: $color-grey-700;
+  //   height: 16px;
+  // }
 }
 
 .home-banner__pulse {
@@ -144,6 +148,7 @@
   position: relative;
   height: 100%;
   width: 100%;
+  //background: white;
 }
 .screenshot__video {
   position: absolute;

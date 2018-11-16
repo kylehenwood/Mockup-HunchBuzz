@@ -2,13 +2,13 @@
   <div class="customers">
     <div class="customers__title">Trusted worldwide</div>
     <ul class="customers__list clearfix">
-      <li class="customers__item"><img src="images/placeholder-customer.png" width="172px" height="120px" alt="customername"></li>
-      <li class="customers__item"><img src="images/placeholder-customer.png" width="172px" height="120px" alt="customername"></li>
-      <li class="customers__item"><img src="images/placeholder-customer.png" width="172px" height="120px" alt="customername"></li>
-      <li class="customers__item"><img src="images/placeholder-customer.png" width="172px" height="120px" alt="customername"></li>
-      <li class="customers__item"><img src="images/placeholder-customer.png" width="172px" height="120px" alt="customername"></li>
-      <li class="customers__item"><img src="images/placeholder-customer.png" width="172px" height="120px" alt="customername"></li>
-      <li class="customers__item"><img src="images/placeholder-customer.png" width="172px" height="120px" alt="customername"></li>
+      <li class="customers__item"><img width="176px" height="176px" src="images/customer--ir.png" alt="customername"></li>
+      <li class="customers__item"><img width="176px" height="176px" src="images/customer--aberdeen.png" alt="customername"></li>
+      <li class="customers__item"><img width="176px" height="176px" src="images/customer--nhs.png" alt="customername"></li>
+      <li class="customers__item"><img width="176px" height="176px" src="images/customer--aus-regional.png" alt="customername"></li>
+      <li class="customers__item"><img width="176px" height="176px" src="images/customer--organic-valley.png" alt="customername"></li>
+      <li class="customers__item"><img width="176px" height="176px" src="images/customer--london-ventures.png" alt="customername"></li>
+      <li class="customers__item"><img width="176px" height="176px" src="images/customer--nzte.png" alt="customername"></li>
     </ul>
     <div class="customers__viewall">
       <a class="actionlink">

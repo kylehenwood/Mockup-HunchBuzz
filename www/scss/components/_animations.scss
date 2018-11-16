@@ -1,0 +1,259 @@
+// only allow these if modernizr has added the class "cssanimations" to the HTML tag
+$animation-speed: 400ms;
+
+.cssanimations {
+
+  // post animation hide
+  .anim--hidden {
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  // staggered animation
+  .anim--delay {
+    &:nth-child(1) {animation-delay: 000ms;}
+    &:nth-child(2) {animation-delay: 040ms;}
+    &:nth-child(3) {animation-delay: 080ms;}
+    &:nth-child(4) {animation-delay: 120ms;}
+  }
+
+  // delays
+  .anim--delay-40 {animation-delay: 040ms;}
+  .anim--delay-80 {animation-delay: 080ms;}
+  .anim--delay-120 {animation-delay: 120ms;}
+  .anim--delay-160 {animation-delay: 160ms;}
+  .anim--delay-200 {animation-delay: 200ms;}
+  .anim--delay-240 {animation-delay: 240ms;}
+  .anim--delay-280 {animation-delay: 280ms;}
+  .anim--delay-320 {animation-delay: 320ms;}
+
+  // slide in right
+  .anim--in-right {
+    opacity: 0;
+    animation-name: slide-in-right;
+    animation-duration: $animation-speed;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes slide-in-right {
+    000% {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+  // slide in left
+  .anim--in-left {
+    opacity: 0;
+    animation-name: slide-in-left;
+    animation-duration: $animation-speed;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes slide-in-left {
+    000% {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+  // slide in top
+  .anim--in-top {
+    opacity: 0;
+    animation-name: slide-in-top;
+    animation-duration: $animation-speed;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes slide-in-top {
+    000% {
+      opacity: 0.4;
+      transform: translateY(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  // slide in bottom
+  .anim--in-bot {
+    opacity: 0;
+    animation-name: slide-in-bottom;
+    animation-duration: $animation-speed;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes slide-in-bottom {
+    000% {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  // slide in top
+  .anim--out-top {
+    opacity: 1;
+    animation-name: slide-out-top;
+    animation-duration: $animation-speed;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+  @keyframes slide-out-top {
+    000% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+  }
+
+  // slide out bot
+  .anim--out-bot {
+    opacity: 1;
+    animation-name: slide-out-bot;
+    animation-duration: $animation-speed;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+  @keyframes slide-out-bot {
+    000% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+  }
+
+  // slide out left
+  .anim--out-left {
+    opacity: 1;
+    animation-name: slide-out-left;
+    animation-duration: $animation-speed;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+  @keyframes slide-out-left {
+    000% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+  }
+
+  // slide out right
+  .anim--out-right {
+    opacity: 1;
+    animation-name: slide-out-right;
+    animation-duration: $animation-speed;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+  @keyframes slide-out-right {
+    000% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+  }
+
+
+  // scale in
+  .anim--scale-up-in {
+    opacity: 0;
+    animation-name: scale-up-in;
+    animation-duration: $animation-speed;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes scale-up-in {
+    000% {
+      opacity: 0.4;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .anim--scale-up-out {
+    opacity: 0;
+    animation-name: scale-up-out;
+    animation-duration: $animation-speed;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes scale-up-out {
+    000% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+  }
+
+  // scale in down
+  .anim--scale-down-in {
+    opacity: 0;
+    animation-name: scale-down-in;
+    animation-duration: 320ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes scale-down-in {
+    000% {
+      opacity: 0.4;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .anim--scale-down-out {
+    opacity: 0;
+    animation-name: scale-down-out;
+    animation-duration: $animation-speed;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes scale-down-out {
+    000% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+  }
+}

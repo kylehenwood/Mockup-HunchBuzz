@@ -3,9 +3,9 @@
     <div class="home-banner">
 
       <div class="home-banner__content">
-        <div class="home-banner__title">Idea Management Software.</div>
-        <p class="home-banner__subtitle">Harness ideas and feedback from employees, partners and customers.</p>
-        <div class="home-banner__actions">
+        <div class="home-banner__title anim--in-bot anim--delay">Idea Management Software.</div>
+        <p class="home-banner__subtitle anim--in-bot anim--delay">Harness ideas and feedback from employees, partners and customers.</p>
+        <div class="home-banner__actions anim--in-bot anim--delay">
           <div class="home-banner__signup">
             <a class="button button--56 button--white button--shadow">
               <div class="button-inner button-inner--icon-after">
@@ -24,7 +24,7 @@
         </div>
       </div>
 
-      <div class="home-banner__mockup">
+      <div class="home-banner__mockup anim--in-bot anim--delay-160">
         <div class="screenshot">
           <div class="screenshot__video">
             <div class="screenshot-button">

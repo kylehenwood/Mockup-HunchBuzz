@@ -5,11 +5,11 @@
 	<div class="features-banner">
 		<div class="center center--1040">
 
-			<div class="features-banner__illustration">
+			<div class="features-banner__illustration anim--in-right">
 				<?php include './_components/illustration-innovation.php';?>
 			</div>
 
-			<div class="features-banner__content">
+			<div class="features-banner__content anim--in-left">
   			<h1 class="features-banner__title">Features that fit.</h1>
 				<div class="features-banner__border"></div>
 				<div class="features-banner__subtitle">

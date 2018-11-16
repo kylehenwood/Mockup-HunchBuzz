@@ -19,7 +19,11 @@
   left: 0;
   width: 240px;
   height: 100%;
-  background: black;
+  background-color: black;
+  background-image: url('../images/quote--london-city.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   // left: -140px;
   // width: 400px;
   // height: 150%;

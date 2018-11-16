@@ -2,11 +2,11 @@
 <div class="layout__section layout__section--white">
 	<div class="center center--800">
 
-		<ul class="hiw-container">
+		<ul class="hiw-container anim--in-bot anim--delay-80">
 			<li class="hiw-container__step">
         <div class="hiw-step hiw-step--selected">
           <div class="hiw-step__indicator">1</div>
-          <div class="hiw-step__image"></div>
+          <div class="hiw-step__image hiw-step__image--1"></div>
           <div class="hiw-step__content">
 
 						<div class="hiw-content">
@@ -47,7 +47,7 @@
 			<li class="hiw-container__step">
         <div class="hiw-step">
           <div class="hiw-step__indicator">2</div>
-          <div class="hiw-step__image"></div>
+          <div class="hiw-step__image hiw-step__image--2"></div>
           <div class="hiw-step__content">
 
 						<div class="hiw-content">
@@ -88,7 +88,7 @@
 			<li class="hiw-container__step">
         <div class="hiw-step">
           <div class="hiw-step__indicator">3</div>
-          <div class="hiw-step__image"></div>
+          <div class="hiw-step__image hiw-step__image--3"></div>
           <div class="hiw-step__content">
 
 						<div class="hiw-content">
