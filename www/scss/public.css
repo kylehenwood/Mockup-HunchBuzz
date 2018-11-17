@@ -1337,7 +1337,7 @@ html {
   user-select: none;
   display: inline-block;
   position: relative;
-  padding: 0 24px 0 0;
+  padding: 4px 24px 4px 0;
   color: #2196F3; }
   .actionlink:hover {
     color: #1976D2; }
@@ -1349,7 +1349,7 @@ html {
 
 .actionlink__icon {
   position: absolute;
-  top: 0;
+  top: 4px;
   right: 0;
   height: 24px;
   width: 16px;
@@ -1610,6 +1610,118 @@ html {
   100% {
     opacity: 0;
     transform: scale(0.9); } }
+
+.c-dot {
+  opacity: 0 !important;
+  animation-name: c-dot;
+  animation-duration: 4.4s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite; }
+
+.c-dot--100 {
+  animation-delay: 000ms; }
+
+.c-dot--200 {
+  animation-delay: 200ms; }
+
+.c-dot--300 {
+  animation-delay: 400ms; }
+
+.c-dot--400 {
+  animation-delay: 600ms; }
+
+.c-dot--500 {
+  animation-delay: 800ms; }
+
+.c-dot--600 {
+  animation-delay: 1000ms; }
+
+.c-dot--700 {
+  animation-delay: 1200ms; }
+
+.c-dot--800 {
+  animation-delay: 1400ms; }
+
+.c-dot--900 {
+  animation-delay: 1600ms; }
+
+.c-dot--1000 {
+  animation-delay: 1600ms; }
+
+.c-dot--1100 {
+  animation-delay: 1800ms; }
+
+.c-dot--1200 {
+  animation-delay: 2000ms; }
+
+.c-dot--1300 {
+  animation-delay: 2200ms; }
+
+.c-dot--1400 {
+  animation-delay: 2400ms; }
+
+.c-dot--1500 {
+  animation-delay: 2600ms; }
+
+.c-dot--1600 {
+  animation-delay: 2800ms; }
+
+.c-dot--1700 {
+  animation-delay: 3000ms; }
+
+.c-dot--1800 {
+  animation-delay: 3200ms; }
+
+.c-dot--1900 {
+  animation-delay: 3400ms; }
+
+.c-dot--2000 {
+  animation-delay: 3600ms; }
+
+.c-dot--2100 {
+  animation-delay: 3800ms; }
+
+.c-dot--2200 {
+  animation-delay: 4000ms; }
+
+.c-dot--2300 {
+  animation-delay: 4200ms; }
+
+.c-dot--2400 {
+  animation-delay: 4400ms; }
+
+@keyframes c-dot {
+  000% {
+    opacity: 0; }
+  020% {
+    opacity: 1; }
+  040%,
+  100% {
+    opacity: 0; } }
+
+.c-circle {
+  opacity: 0 !important;
+  animation-name: c-circle;
+  animation-duration: 8s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  transform-origin: 50%; }
+
+.c-circle--100 {
+  animation-delay: 000ms; }
+
+.c-circle--200 {
+  animation-delay: -4000ms; }
+
+@keyframes c-circle {
+  000% {
+    opacity: 0;
+    transform: scale(0.8); }
+  010% {
+    opacity: 0.6; }
+  100% {
+    opacity: 0;
+    transform: scale(1); } }
 
 .svg-bulb__glow {
   animation-name: svg-bulb-glow;

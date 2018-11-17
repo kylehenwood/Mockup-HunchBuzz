@@ -6,7 +6,7 @@
   user-select: none;
   display: inline-block;
   position: relative;
-  padding: 0 24px 0 0;
+  padding: 4px 24px 4px 0;
   color: $color-blue-500;
   &:hover {
     color: $color-blue-700;
@@ -24,7 +24,7 @@
 }
 .actionlink__icon {
   position: absolute;
-  top: 0;
+  top: 4px;
   right: 0;
   height: 24px;
   width: 16px;

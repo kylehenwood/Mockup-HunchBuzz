@@ -11,28 +11,60 @@
         <path d="M143,169.14v29.72a15.26,15.26,0,0,0,7.63,13.22l25.74,14.86a15.26,15.26,0,0,0,15.26,0l25.74-14.86A15.26,15.26,0,0,0,225,198.86V169.14a15.26,15.26,0,0,0-7.63-13.22l-25.74-14.86a15.26,15.26,0,0,0-15.26,0l-25.74,14.86A15.26,15.26,0,0,0,143,169.14Z" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;opacity:0.4"/>
       </g>
       <circle id="ring1" cx="184" cy="184" r="64" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px"/>
-      <circle id="ring2" cx="184" cy="184" r="80" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;opacity:0.4"/>
+      <circle class="c-circle c-circle--100" id="ring2" cx="184" cy="184" r="80" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;opacity:0.4"/>
+      <circle class="c-circle c-circle--200" id="ring3" cx="184" cy="184" r="80" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;opacity:0.4"/>
+      <circle class="c-circle c-circle--300" id="ring4" cx="184" cy="184" r="80" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;opacity:0.4"/>
     </g>
-    <g id="dots-lb">
-      <circle cx="84" cy="84" r="4" style="fill:#fff;opacity:0.30000000000000004"/>
-      <circle cx="100" cy="100" r="4" style="fill:#fff;opacity:0.6000000000000001"/>
-      <circle cx="116" cy="116" r="4" style="fill:#fff"/>
+
+
+    <g id="dots-1a">
+      <circle class="c-dot c-dot--000" cx="116" cy="116" r="4" style="fill:#fff;opacity:0"/>
+      <circle class="c-dot c-dot--200" cx="100" cy="100" r="4" style="fill:#fff;opacity:0"/>
+      <circle class="c-dot c-dot--400" cx="84" cy="84" r="4" style="fill:#fff;opacity:0"/>
     </g>
-    <g id="dots-rt">
-      <circle cx="252" cy="252" r="4" style="fill:#fff;opacity:0.30000000000000004"/>
-      <circle cx="268" cy="268" r="4" style="fill:#fff;opacity:0.6000000000000001"/>
-      <circle cx="284" cy="284" r="4" style="fill:#fff"/>
+    <g id="dots-1b">
+      <circle class="c-dot c-dot--800" cx="84" cy="84" r="4" style="fill:#fff;opacity:0.3"/>
+      <circle class="c-dot c-dot--1000" cx="100" cy="100" r="4" style="fill:#fff;opacity:0.6"/>
+      <circle class="c-dot c-dot--1200" cx="116" cy="116" r="4" style="fill:#fff"/>
     </g>
-    <g id="dot-rb">
-      <circle cx="252" cy="116" r="4" style="fill:#fff;opacity:0.30000000000000004"/>
-      <circle cx="268" cy="100" r="4" style="fill:#fff;opacity:0.6000000000000001"/>
-      <circle cx="284" cy="84" r="4" style="fill:#fff"/>
+
+
+    <g id="dot-2a">
+      <circle class="c-dot c-dot--1200" cx="252" cy="116" r="4" style="fill:#fff;opacity:0.3"/>
+      <circle class="c-dot c-dot--1400" cx="268" cy="100" r="4" style="fill:#fff;opacity:0.6"/>
+      <circle class="c-dot c-dot--1600" cx="284" cy="84" r="4" style="fill:#fff"/>
     </g>
-    <g id="dot-rb-2" data-name="dot-rb">
-      <circle cx="84" cy="284" r="4" style="fill:#fff;opacity:0.30000000000000004"/>
-      <circle cx="100" cy="268" r="4" style="fill:#fff;opacity:0.6000000000000001"/>
-      <circle cx="116" cy="252" r="4" style="fill:#fff"/>
+    <g id="dot-2b">
+      <circle class="c-dot c-dot--2000" cx="284" cy="84" r="4" style="fill:#fff;opacity:0;"/>
+      <circle class="c-dot c-dot--2200" cx="268" cy="100" r="4" style="fill:#fff;opacity:0;"/>
+      <circle class="c-dot c-dot--2400" cx="252" cy="116" r="4" style="fill:#fff;opacity:0;"/>
     </g>
+
+
+    <g id="dots-3a">
+      <circle class="c-dot c-dot--000" cx="252" cy="252" r="4" style="fill:#fff;opacity:0.3"/>
+      <circle class="c-dot c-dot--200" cx="268" cy="268" r="4" style="fill:#fff;opacity:0.6"/>
+      <circle class="c-dot c-dot--400" cx="284" cy="284" r="4" style="fill:#fff"/>
+    </g>
+    <g id="dots-3b">
+      <circle class="c-dot c-dot--800" cx="284" cy="284" r="4" style="fill:#fff;opacity:0;"/>
+      <circle class="c-dot c-dot--1000" cx="268" cy="268" r="4" style="fill:#fff;opacity:0;"/>
+      <circle class="c-dot c-dot--1200" cx="252" cy="252" r="4" style="fill:#fff;opacity:0;"/>
+    </g>
+
+
+    <g id="dot-4a" data-name="dot-rb">
+      <circle class="c-dot c-dot--2000" cx="84" cy="284" r="4" style="fill:#fff;opacity:0.3"/>
+      <circle class="c-dot c-dot--2200" cx="100" cy="268" r="4" style="fill:#fff;opacity:0.6"/>
+      <circle class="c-dot c-dot--2400" cx="116" cy="252" r="4" style="fill:#fff"/>
+    </g>
+    <g id="dot-4b" data-name="dot-rb">
+      <circle class="c-dot c-dot--1200" cx="116" cy="252" r="4" style="fill:#fff;opacity:0;"/>
+      <circle class="c-dot c-dot--1400" cx="100" cy="268" r="4" style="fill:#fff;opacity:0;"/>
+      <circle class="c-dot c-dot--1600" cx="84" cy="284" r="4" style="fill:#fff;opacity:0;"/>
+    </g>
+
+
     <g id="avatar">
       <circle id="circle" cx="48" cy="48" r="40" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px"/>
       <g id="icon">
