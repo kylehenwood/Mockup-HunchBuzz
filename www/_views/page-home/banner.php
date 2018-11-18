@@ -29,7 +29,7 @@
           <div class="screenshot__video">
             <div class="screenshot-button">
               <div class="screenshot-button__icon"><span class="flat-icon icon--24 icon--play"></span></div>
-              <div class="screenshot-button__text">Watch how HunchBuzz can help you</div>
+              <div class="screenshot-button__text">Watch video</div>
             </div>
           </div>
           <img class="screenshot__image" src="images/mockup-screenshot.png" />

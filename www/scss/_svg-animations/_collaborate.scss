@@ -4,34 +4,34 @@
 .c-dot {
   opacity: 0!important;
   animation-name: c-dot;
-  animation-duration: 4.4s;
+  animation-duration: 9.2s;
   animation-timing-function: ease-out;
   animation-iteration-count: infinite;
 }
 .c-dot--100 {animation-delay:000ms;}
-.c-dot--200 {animation-delay:200ms;}
-.c-dot--300 {animation-delay:400ms;}
-.c-dot--400 {animation-delay:600ms;}
-.c-dot--500 {animation-delay:800ms;}
-.c-dot--600 {animation-delay:1000ms;}
-.c-dot--700 {animation-delay:1200ms;}
-.c-dot--800 {animation-delay:1400ms;}
-.c-dot--900 {animation-delay:1600ms;}
-.c-dot--1000 {animation-delay:1600ms;}
-.c-dot--1100 {animation-delay:1800ms;}
-.c-dot--1200 {animation-delay:2000ms;}
-.c-dot--1300 {animation-delay:2200ms;}
-.c-dot--1400 {animation-delay:2400ms;}
-.c-dot--1500 {animation-delay:2600ms;}
-.c-dot--1600 {animation-delay:2800ms;}
-.c-dot--1700 {animation-delay:3000ms;}
-.c-dot--1800 {animation-delay:3200ms;}
-.c-dot--1900 {animation-delay:3400ms;}
-.c-dot--2000 {animation-delay:3600ms;}
-.c-dot--2100 {animation-delay:3800ms;}
-.c-dot--2200 {animation-delay:4000ms;}
-.c-dot--2300 {animation-delay:4200ms;}
-.c-dot--2400 {animation-delay:4400ms;}
+.c-dot--200 {animation-delay:400ms;}
+.c-dot--300 {animation-delay:800ms;}
+.c-dot--400 {animation-delay:1200ms;}
+.c-dot--500 {animation-delay:1600ms;}
+.c-dot--600 {animation-delay:2000ms;}
+.c-dot--700 {animation-delay:2400ms;}
+.c-dot--800 {animation-delay:2800ms;}
+.c-dot--900 {animation-delay:3200ms;}
+.c-dot--1000 {animation-delay:3600ms;}
+.c-dot--1100 {animation-delay:4000ms;}
+.c-dot--1200 {animation-delay:4400ms;}
+.c-dot--1300 {animation-delay:4800ms;}
+.c-dot--1400 {animation-delay:5200ms;}
+.c-dot--1500 {animation-delay:5600ms;}
+.c-dot--1600 {animation-delay:6000ms;}
+.c-dot--1700 {animation-delay:6400ms;}
+.c-dot--1800 {animation-delay:6800ms;}
+.c-dot--1900 {animation-delay:7200ms;}
+.c-dot--2000 {animation-delay:7600ms;}
+.c-dot--2100 {animation-delay:8200ms;}
+.c-dot--2200 {animation-delay:8400ms;}
+.c-dot--2300 {animation-delay:8800ms;}
+.c-dot--2400 {animation-delay:9200ms;}
 
 
 @keyframes c-dot {

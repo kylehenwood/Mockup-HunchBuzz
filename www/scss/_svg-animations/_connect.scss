@@ -1,0 +1,36 @@
+// ---
+// Speech Bubbles
+// ---
+
+.a-bubble {
+  opacity: 0;
+  animation-name: a-bubble;
+  animation-duration: 16s;
+  animation-direction: fowards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: 50%;
+}
+.a-bubble--100 {animation-delay:-000ms;}
+.a-bubble--200 {animation-delay:-1000ms;}
+.a-bubble--300 {animation-delay:-2000ms;}
+.a-bubble--400 {animation-delay:-300ms;}
+
+@keyframes a-bubble {
+  000% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  020% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  080% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+}

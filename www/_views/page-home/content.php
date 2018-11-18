@@ -81,7 +81,16 @@
   <div class="center center--1040">
 
     <div class="home-crowdsource">
-      <div class="home-crowdsource__image"></div>
+      <div class="home-crowdsource__image">
+        <div class="challenge-example">
+          <div class="challenge-example__row">
+            <div class="challenge-example__item"><img src="images/example-challenge/productivity-booster.png"></div>
+            <div class="challenge-example__item"><img src="images/example-challenge/going-green.png"></div>
+            <div class="challenge-example__item"><img src="images/example-challenge/friday-activities.png"></div>
+            <div class="challenge-example__item"><img src="images/example-challenge/customer-champion.png"></div>
+          </div>
+        </div>
+      </div>
       <div class="home-crowdsource__content">
         <h3 class="home-crowdsource__title">You manage customers, sales and finance — now manage innovation too.</h3>
         <p class="home-crowdsource__text">HunchBuzz is an idea management system that enables organizations to harness ideas and feedback from employees, partners and customers. It’s used globally by organizations of all kinds to manage innovation.</p>
