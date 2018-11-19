@@ -1,19 +1,6 @@
-// alternate opacity
-.svg-bulb__glow {
-  animation-name: svg-bulb-glow;
-  animation-duration: 4s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-}
-@keyframes svg-bulb-glow {
-  000% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 0.2;
-  }
-}
-
+// ---
+// SVG Lightbulb animation
+// ---
 
 .svg-bulb__dot {
   animation-name: svg-bulb-dot;
@@ -39,5 +26,34 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+
+// ---
+// Circle pulse
+// ---
+.svg-bulb__glow {
+  opacity: 0!important;
+  animation-name: svg-bulb;
+  animation-duration: 8s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  transform-origin: 50%;
+}
+.svg-bulb__glow--100 {animation-delay:-0000ms;}
+.svg-bulb__glow--200 {animation-delay:-4000ms;}
+
+@keyframes svg-bulb {
+  000% {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  010% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
   }
 }
