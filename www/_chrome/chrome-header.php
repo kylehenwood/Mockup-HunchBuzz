@@ -54,7 +54,7 @@
       </svg>
     </div>
 
-    <a class="mobile-navigation__item" href="index.php">Home</a>
+    <a class="mobile-navigation__item mobile-navigation__item--selected" href="index.php">Home</a>
     <a class="mobile-navigation__item" href="index.php?pageID=features">Features</a>
     <a class="mobile-navigation__item" href="index.php?pageID=how-it-works">How it works</a>
     <a class="mobile-navigation__item" href="index.php?pageID=plans">Plans</a>

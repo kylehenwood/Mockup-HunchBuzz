@@ -1,6 +1,10 @@
 <!-- Banner -->
-
 <div class="layout__banner">
+	<div class="banner-hexagon banner-hexagon--1 js-parralax" data-modifier="16"></div>
+	<div class="banner-hexagon banner-hexagon--2 js-parralax" data-modifier="4"></div>
+	<div class="banner-hexagon banner-hexagon--3 js-parralax" data-modifier="18"></div>
+	<div class="banner-hexagon banner-hexagon--4 js-parralax" data-modifier="6"></div>
+	<div class="banner-hexagon banner-hexagon--5 js-parralax" data-modifier="24"></div>
 
 	<div class="features-banner">
 		<div class="center center--1040">
