@@ -45,6 +45,14 @@ html {
     padding: 64px 20px;
   }
 }
+
+.layout__section--crowdsource {
+  padding: 80px 0;
+  @include screen-med {
+    padding: 0 0 64px;
+  }
+}
+
 .layout__section--white {
   background: white;
 }

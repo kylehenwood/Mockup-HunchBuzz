@@ -68,7 +68,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
 
@@ -77,7 +76,7 @@
 
 
 <!-- -->
-<div class="layout__section layout__section--white">
+<div class="layout__section layout__section--crowdsource layout__section--white">
   <div class="center center--1040">
 
     <div class="home-crowdsource">

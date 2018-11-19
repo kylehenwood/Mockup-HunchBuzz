@@ -142,21 +142,25 @@
   position: relative;
   background: $color-grey-200;
   border-radius: 16px;
+  padding: 80px 0;
   @include screen-med {
-    padding: 0;
+    padding: 40px 0;
+    border-radius: 0;
   }
 }
 .home-crowdsource__content {
   margin: 0 0 0 480px;
-  padding: 80px 40px;
-  min-height: 520px;
+  padding: 0 40px;
+  min-height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   @include screen-med {
-    min-height: auto;
-    margin: 0;
-    padding: 320px 24px 40px;
+    margin: 0 0 0 40%;
+    padding: 0 24px;
+  }
+  @include screen-mob {
+    margin: 0 0 0 20%;
   }
 }
 .home-crowdsource__title {
@@ -179,11 +183,12 @@
   width: 480px;
   height: 100%;
   @include screen-med {
-    height: 320px;
-    width: 100%;
+    width: 40%;
+  }
+  @include screen-mob {
+    width: 20%;
   }
 }
-
 
 .challenge-example {
   width: 100%;
@@ -204,8 +209,6 @@
   animation-timing-function: ease-out;
   @include screen-med {
     padding: 40px 24px;
-    right: auto;
-    left: 0;
   }
 }
 .challenge-example__item {
@@ -217,11 +220,6 @@
   box-shadow: $shadow-200;
   border-radius: 4px;
   overflow: hidden;
-  @include screen-med {
-    float: left;
-    height: 180px;
-    width: 136px;
-  }
 }
 
 @keyframes example-card {

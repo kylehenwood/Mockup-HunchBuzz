@@ -460,6 +460,12 @@ html {
     .layout__section {
       padding: 64px 20px; } }
 
+.layout__section--crowdsource {
+  padding: 80px 0; }
+  @media screen and (max-width: 960px) {
+    .layout__section--crowdsource {
+      padding: 0 0 64px; } }
+
 .layout__section--white {
   background: white; }
 
@@ -2089,23 +2095,27 @@ html {
 .home-crowdsource {
   position: relative;
   background: #EEEEEE;
-  border-radius: 16px; }
+  border-radius: 16px;
+  padding: 80px 0; }
   @media screen and (max-width: 960px) {
     .home-crowdsource {
-      padding: 0; } }
+      padding: 40px 0;
+      border-radius: 0; } }
 
 .home-crowdsource__content {
   margin: 0 0 0 480px;
-  padding: 80px 40px;
-  min-height: 520px;
+  padding: 0 40px;
+  min-height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: center; }
   @media screen and (max-width: 960px) {
     .home-crowdsource__content {
-      min-height: auto;
-      margin: 0;
-      padding: 320px 24px 40px; } }
+      margin: 0 0 0 40%;
+      padding: 0 24px; } }
+  @media screen and (max-width: 720px) {
+    .home-crowdsource__content {
+      margin: 0 0 0 20%; } }
 
 .home-crowdsource__title {
   font-size: 28px;
@@ -2126,8 +2136,10 @@ html {
   height: 100%; }
   @media screen and (max-width: 960px) {
     .home-crowdsource__image {
-      height: 320px;
-      width: 100%; } }
+      width: 40%; } }
+  @media screen and (max-width: 720px) {
+    .home-crowdsource__image {
+      width: 20%; } }
 
 .challenge-example {
   width: 100%;
@@ -2148,9 +2160,7 @@ html {
   animation-timing-function: ease-out; }
   @media screen and (max-width: 960px) {
     .challenge-example__row {
-      padding: 40px 24px;
-      right: auto;
-      left: 0; } }
+      padding: 40px 24px; } }
 
 .challenge-example__item {
   float: right;
@@ -2161,11 +2171,6 @@ html {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 4px;
   overflow: hidden; }
-  @media screen and (max-width: 960px) {
-    .challenge-example__item {
-      float: left;
-      height: 180px;
-      width: 136px; } }
 
 @keyframes example-card {
   000% {
