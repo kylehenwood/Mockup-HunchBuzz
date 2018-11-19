@@ -21,7 +21,18 @@ html {
 }
 
 .layout__banner {
+  position: relative;
   background: $color-blue-700;
+}
+
+.parralax-hex {
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(red,0.1);
 }
 
 .layout__mobile-navigation {

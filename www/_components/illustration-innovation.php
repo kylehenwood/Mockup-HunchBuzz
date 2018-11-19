@@ -10,7 +10,9 @@
     </g>
     <g id="bulb">
       <circle cx="184" cy="184" r="64" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px"/>
-      <circle class="svg-bulb__glow" cx="184" cy="184" r="72" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;opacity:0.4"/>
+      <circle class="svg-bulb__glow svg-bulb__glow--100" cx="184" cy="184" r="72" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;opacity:0.4"/>
+      <circle class="svg-bulb__glow svg-bulb__glow--200" cx="184" cy="184" r="72" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;opacity:0.4"/>
+      <circle class="svg-bulb__glow svg-bulb__glow--300" cx="184" cy="184" r="72" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;opacity:0.4"/>
     </g>
     <g id="dots5">
       <circle class="svg-bulb__dot svg-bulb__dot--500" cx="268" cy="184" r="4" style="fill:#fff;opacity:0.8"/>

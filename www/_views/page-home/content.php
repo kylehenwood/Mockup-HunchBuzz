@@ -85,8 +85,6 @@
           <div class="challenge-example__row">
             <div class="challenge-example__item"><img src="images/example-challenge/productivity-booster.png"></div>
             <div class="challenge-example__item"><img src="images/example-challenge/going-green.png"></div>
-            <div class="challenge-example__item"><img src="images/example-challenge/friday-activities.png"></div>
-            <div class="challenge-example__item"><img src="images/example-challenge/customer-champion.png"></div>
           </div>
         </div>
       </div>

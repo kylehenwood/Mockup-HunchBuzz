@@ -25,7 +25,13 @@
 // Frequently asked questions
 .faq {}
 .faq__heading {
+  font-size: 28px;
+  line-height: 1.6;
   margin: 0 0 40px;
+  @include screen-med {
+    font-size: 24px;
+    text-align: center;
+  }
 }
 .faq__grid {
   margin: -20px;

@@ -1,9 +1,11 @@
 <!-- Banner -->
 <div class="layout__banner">
+	<div class="parralax-hex"></div>
 	<div class="center center--1120">
 		<div class="plans-banner anim--in-bot">
 			<h1 class="plans-banner__title">Our plans.</h1>
 			<div class="plans-banner__border"></div>
+			<p class="plans-banner__subtitle">Try free for the first 30 days, no credit card required.</p>
 		</div>
 	</div>
 </div>
@@ -172,7 +174,7 @@
 					<div class="plan-enterprise__mask">
 						<div class="plan-enterprise__title">Enterprise</div>
 						<div class="plan-enterprise__cta">
-							<a class="button button--48 button--white">Contact us</a>
+							<a class="button button--48 button--white button--shadow">Contact us</a>
 						</div>
 					</div>
 					<div class="plan-enterprise__content">

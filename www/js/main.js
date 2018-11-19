@@ -6,6 +6,9 @@ $(document).ready(function(){
   smoothScroll();
   planExpand();
   navigationSelected();
+
+  ScrollReveal().reveal('.quote-card');
+
 });
 
 // mobile navigation
@@ -47,12 +50,16 @@ function planExpand(){
 // Highlight current page navigation
 // ----------------------------
 function navigationSelected() {
+  var navHome = $('.js-nav-home');
   var navFeatures = $('.js-nav-features');
   var navHiw = $('.js-nav-hiw');
   var navPlans = $('.js-nav-plans');
   var navSelected;
 
   switch(currentPage) {
+    case 'home':
+      navSelected = navHome;
+      break;
     case 'features':
       navSelected = navFeatures;
       break;
@@ -66,7 +73,11 @@ function navigationSelected() {
       navSelected = null;
   }
   if (navSelected!= null) {
-    navSelected.addClass('header-navigation__item--selected');
+    if (currentPage === 'home') {
+      navSelected.addClass('header-logo--selected');
+    } else {
+      navSelected.addClass('header-navigation__item--selected');
+    }
   }
 }
 

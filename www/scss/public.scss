@@ -28,10 +28,10 @@ svg {
 
 
 // _chrome
-@import "layout/_layout";
-@import "layout/_layout-header";
-@import "layout/_layout-footer";
-@import "layout/_mobile-navigation";
+@import "chrome/_layout";
+@import "chrome/_layout-header";
+@import "chrome/_layout-footer";
+@import "chrome/_mobile-navigation";
 
 // _components
 @import "components/_typography";
@@ -40,18 +40,6 @@ svg {
 @import "components/_actionlink";
 @import "components/_brainstorming";
 @import "components/_animations";
-// @import "components/_button-switch";
-// @import "components/_button-pattern";
-// @import "components/_dropdown";
-// @import "components/_form";
-// @import "components/_form-grid";
-// @import "components/_form-search";
-// @import "components/_form-credit";
-// @import "components/_form-checkbox";
-// @import "components/_switch";
-// @import "components/_switch-control";
-// @import "components/_breadcrumb";
-// @import "components/_page-alert";
 
 
 // _svg-animations
@@ -75,9 +63,9 @@ svg {
 
 // --pricing
 @import "views/page-plans/_banner";
-@import "views/page-plans/_plans";
-@import "views/page-plans/_plan";
 @import "views/page-plans/_plan-container";
+@import "views/page-plans/_plan";
+@import "views/page-plans/_plan-enterprise";
 @import "views/page-plans/_content";
 
 // --blog

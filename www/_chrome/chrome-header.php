@@ -4,7 +4,7 @@
 
     <div class="header">
       <div class="header__logo">
-        <a class="header-logo" href="index.php"></a>
+        <a class="header-logo js-nav-home" href="index.php"></a>
       </div>
       <div class="header__navigation">
         <div class="header-navigation">
@@ -17,10 +17,10 @@
       <div class="header__auth">
         <div class="header-auth">
           <div class="header-auth__login">
-            <a class="auth-login">Log in</a>
+            <a class="auth-login" href="#">Log in</a>
           </div>
           <div class="header-auth__signup">
-            <a href="index.php?pageID=app&page=signup" class="button button--transparent-stroke button--40">
+            <a class="button button--transparent-stroke button--40" href="#">
               Sign up
             </a>
           </div>

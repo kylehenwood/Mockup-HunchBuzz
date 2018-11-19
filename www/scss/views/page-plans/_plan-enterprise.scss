@@ -17,7 +17,11 @@
   width: 320px;
   height: 100%;
   padding: 64px 32px;
-  background: $color-blue-700;
+  background-image: url('../images/hex-background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $color-blue-700;
 }
 .plan-enterprise__title {
   font-size: 24px;

@@ -1,4 +1,6 @@
-
+// ---
+// How it works page
+// ---
 
 .hiw-container {
   margin: -200px 0 0;
@@ -70,16 +72,18 @@
 
 .hiw-step {
   position: relative;
+  z-index: 3;
   padding: 0 0 0 240px;
   border-radius: 8px;
   background: white;
   box-shadow: inset 0 0 0 2px $color-grey-300;
+  transition: all 160ms ease-out;
   @include screen-med {
     padding: 240px 0 0;
   }
 }
 .hiw-step--selected {
-  box-shadow: $shadow-300;
+  box-shadow: inset 0 0 0 2px white, 0 0 0 2px $color-blue-500, $shadow-400;
 }
 .hiw-step__indicator {
   position: absolute;
