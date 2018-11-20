@@ -17,23 +17,22 @@
   transform: translateY(var(--translateY));
 	will-change: transform;
   transition: all 200ms linear;
-  will-change: transform;
 
-  animation-name: hex-in;
-  animation-duration: 2000ms;
-  animation-timing-function: ease-out;
-  animation-iteration-count: forwards;
+  // animation-name: hex-in;
+  // animation-duration: 2000ms;
+  // animation-timing-function: ease-out;
+  // animation-iteration-count: forwards;
 }
 
 
-@keyframes hex-in {
-  000% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+// @keyframes hex-in {
+//   000% {
+//     transform: scale(0);
+//   }
+//   100% {
+//     transform: scale(1);
+//   }
+// }
 
 
 

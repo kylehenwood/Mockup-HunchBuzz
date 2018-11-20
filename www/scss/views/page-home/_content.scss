@@ -53,7 +53,12 @@
 // -----------------
 // Home content + illustration blocks
 // -----------------
-.home-content {}
+.home-content {
+  @include screen-med {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
 .home-content__section {
   @include screen-med {
     margin: 0 0 40px;
@@ -166,8 +171,11 @@
 }
 .home-crowdsource__title {
   font-size: 28px;
-  line-height: 1.4;
+  line-height: 1.6;
   margin: 0 0 16px;
+  @include screen-med {
+    font-size: 24px;
+  }
 }
 .home-crowdsource__text {
   font-size: 16px;

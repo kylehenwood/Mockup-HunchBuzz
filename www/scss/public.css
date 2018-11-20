@@ -893,18 +893,7 @@ html {
   background-size: contain;
   transform: translateY(var(--translateY));
   will-change: transform;
-  transition: all 200ms linear;
-  will-change: transform;
-  animation-name: hex-in;
-  animation-duration: 2000ms;
-  animation-timing-function: ease-out;
-  animation-iteration-count: forwards; }
-
-@keyframes hex-in {
-  000% {
-    transform: scale(0); }
-  100% {
-    transform: scale(1); } }
+  transition: all 200ms linear; }
 
 .banner-hexagon--1 {
   top: 12%;
@@ -2108,6 +2097,11 @@ html {
   text-align: center; }
 
 @media screen and (max-width: 960px) {
+  .home-content {
+    max-width: 720px;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 960px) {
   .home-content__section {
     margin: 0 0 40px; }
     .home-content__section:last-child {
@@ -2203,8 +2197,11 @@ html {
 
 .home-crowdsource__title {
   font-size: 28px;
-  line-height: 1.4;
+  line-height: 1.6;
   margin: 0 0 16px; }
+  @media screen and (max-width: 960px) {
+    .home-crowdsource__title {
+      font-size: 24px; } }
 
 .home-crowdsource__text {
   font-size: 16px;
@@ -2680,6 +2677,9 @@ html {
   font-size: 16px;
   font-style: italic;
   line-height: 1.2; }
+  @media screen and (max-width: 720px) {
+    .plans-banner__subtitle {
+      font-size: 12px; } }
 
 .plans-container {
   position: relative;

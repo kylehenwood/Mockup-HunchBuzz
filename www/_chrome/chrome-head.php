@@ -8,13 +8,13 @@
 	<script type="text/javascript" src="js/vendor/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>
 	<script type="text/javascript" src="js/vendor/scrollreveal.js"></script>
-  <script type="text/javascript" src="js/vendor/basicScroll.min.js"></script>
+  <!-- <script type="text/javascript" src="js/vendor/basicScroll.min.js"></script> -->
 
   <!-- init -->
 	<script type="text/javascript" src="js/useful.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/hiw.js"></script>
-  <script type="text/javascript" src="js/parralax.js"></script>
+  <!-- <script type="text/javascript" src="js/parralax.js"></script> -->
 
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic,300,300italic' rel='stylesheet' type='text/css'>
 </head>
