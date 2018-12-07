@@ -32,8 +32,8 @@ $(document).ready(function(){
     var path = {
       id: elem.attr('id'),
       path: elem,
-      d: elem.attr('d')
-      //length: elem.SVGGeometryElement.getTotalLength(),
+      d: elem.attr('d'),
+      //length: SVGGeometryElement.getTotalLength(elem),
     }
     beePathArray.push(path);
   });
@@ -41,6 +41,9 @@ $(document).ready(function(){
   // ---
   // Start looping
   animate();
+
+
+
 
   // ---
   // Startup
@@ -51,7 +54,8 @@ $(document).ready(function(){
     // select path
     path = beePathArray[i];
 
-    var beeContainer2 = document.querySelector('.js-bee-container');
+    //var beeContainer2 = document.querySelector('.js-bee-container');
+    var beeContainer2 = document.querySelector('.js-bee-banner');
     var animDuration = rand(beeSpeedMin,beeSpeedMax);
     var randStart = rand(1,10);
     var animStart = -animDuration*(randStart/10);
@@ -59,15 +63,16 @@ $(document).ready(function(){
     const beeID = 'js-bee--'+i;
 
     var svg = "http://www.w3.org/2000/svg";
-    var bee = document.createElementNS(svg,'rect');
+    var bee = document.createElement('div');
     bee.setAttribute('id',beeID);
+    bee.setAttribute('class','bee-motion');
     bee.setAttribute('x',0);
     bee.setAttribute('y',0);
     bee.setAttribute('width',16);
     bee.setAttribute('height',16);
     bee.setAttribute('fill','#0D47A1');
     bee.setAttribute('transform','translate(-8,-8)');
-    bee.setAttribute('style','offset-path: path('+path.d+')');
+    bee.setAttribute('style','offset-path: path("'+path.d+'")');
 
     var beeMotion = document.createElementNS(svg,'animateMotion');
     beeMotion.setAttribute('dur',animDuration);
@@ -79,10 +84,10 @@ $(document).ready(function(){
     beeMpath.setAttribute('xlink:href','#'+path.id);
 
     // add children to bee container
-    bee.appendChild(beeMotion);
-    beeMotion.appendChild(beeMpath);
+    //bee.appendChild(beeMotion);
+    //beeMotion.appendChild(beeMpath);
 
-    console.log(bee);
+    //console.log(bee);
     beeContainer2.appendChild(bee);
 
     // push bee ID into an array for later looping
@@ -103,35 +108,66 @@ function createBeeDot() {
   const beeCount = bees.length;
   //console.log(beeCount);
   // place a bee on each path, random location and start point
-  for (i = 0; i < beeCount; i++) {
-    const beeID = bees[i];
-    const bee = $('#'+beeID);
+  $('.bee-motion').each(function(){
+    //const beeID = bees[i];
+    const bee = $(this);
 
     var parentPos = beeSvg.offset();
     var dot = {
-      top: bee.offset().top - parentPos.top,
-      left: bee.offset().left - parentPos.left,
+      top: bee.offset().top - parentPos.top+7,
+      left: bee.offset().left - parentPos.left+7,
       alpha: 1
     }
 
-    bee.attr({
-      'fill':'#f00f00'
-    });
-
-    dotContainer = document.querySelector('.js-bee-trails');
+    dotContainer = document.querySelector('.js-bee-banner');
     var svg = "http://www.w3.org/2000/svg";
-    var circle = document.createElementNS('http://www.w3.org/2000/svg','circle');
-    circle.setAttribute('cx',dot.left+10);
-    circle.setAttribute('cy',dot.top+10);
+    var circle = document.createElement('div');
+    // circle.css({
+    //   'top':dot.top,
+    //   'left':dot.left
+    // });
+    circle.setAttribute('style','top:'+dot.top+'px; left:'+dot.left+'px;');
     circle.setAttribute('r',2);
     circle.setAttribute('fill','#ffffff');
     circle.setAttribute('class','bee-dot');
-
     dotContainer.appendChild(circle);
     //replace with on animation end to remove
     setTimeout(function(){
-      //dotContainer.removeChild(circle);
+      circle.remove();
     },4000);
+  });
+    //
+    //
+    //
+    //
+    // const beeID = bees[i];
+    // const bee = $('#'+beeID);
+    //
+    // var parentPos = beeSvg.offset();
+    // var dot = {
+    //   top: bee.offset().top - parentPos.top,
+    //   left: bee.offset().left - parentPos.left,
+    //   alpha: 1
+    // }
+    //
+    // bee.attr({
+    //   'fill':'#f00f00'
+    // });
+    //
+    // dotContainer = document.querySelector('.js-bee-trails');
+    // var svg = "http://www.w3.org/2000/svg";
+    // var circle = document.createElementNS('http://www.w3.org/2000/svg','circle');
+    // circle.setAttribute('cx',dot.left+10);
+    // circle.setAttribute('cy',dot.top+10);
+    // circle.setAttribute('r',2);
+    // circle.setAttribute('fill','#ffffff');
+    // circle.setAttribute('class','bee-dot');
+    //
+    // dotContainer.appendChild(circle);
+    // //replace with on animation end to remove
+    // setTimeout(function(){
+    //   //dotContainer.removeChild(circle);
+    // },4000);
 
     //circle.on
 
@@ -141,7 +177,7 @@ function createBeeDot() {
     //   console.log('remove');
     // });
 
-  }
+  //}
 }
 
 
