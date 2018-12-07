@@ -12,12 +12,6 @@
 
 const beeSpeedMin = 24;
 const beeSpeedMax = 44;
-let beeCanvas = {
-  id: null,
-  ctx: null,
-  width: null,
-  height: null,
-};
 
 var dotArray = [];  // dots that appear behind each bee are pushed to this array
 
@@ -26,7 +20,6 @@ var beeContainer;
 var dotContainer;
 var beePaths;
 var beePathArray = [];
-var beeElem;
 var bees = [];
 
 $(document).ready(function(){
@@ -39,27 +32,18 @@ $(document).ready(function(){
     var path = {
       id: elem.attr('id'),
       path: elem,
-      //length: elem.getTotalLength()
+      d: elem.attr('d')
+      //length: elem.SVGGeometryElement.getTotalLength(),
     }
     beePathArray.push(path);
   });
 
   // ---
-  // Canvas setup
-  canvasInitalize();
   // Start looping
-  canvasAnimate();
-
-  $(window).resize(function(){
-    waitForFinalEvent(function () {
-      canvasInitalize();
-    }, 200);
-  });
+  animate();
 
   // ---
   // Startup
-  beeElem = $('.js-bee');
-  beeElem.hide();
   const pathCount = beePathArray.length;
 
   // place a bee on each path, random location and start point
@@ -72,25 +56,18 @@ $(document).ready(function(){
     var randStart = rand(1,10);
     var animStart = -animDuration*(randStart/10);
 
-    // var beeHtml = ''+
-    // '<rect id="js-bee--'+i+'" x="10" y="10" width="16" height="16" fill="#0D47A1" transform="translate(-8,-8)">' +
-    // '<animateMotion dur="'+animDuration+'s" begin="'+animStart+'" repeatCount="indefinite" rotate="auto">' +
-    // '<mpath xlink:href="#'+path.id+'"></mpath>' +
-    // '</animateMotion>' +
-    // '</rect>';
-    //
-    // beeContainer.append(beeHtml);
-
+    const beeID = 'js-bee--'+i;
 
     var svg = "http://www.w3.org/2000/svg";
-    var bee = document.createElementNS('http://www.w3.org/2000/svg','rect');
-    bee.setAttribute('id','js-bee--'+i);
+    var bee = document.createElementNS(svg,'rect');
+    bee.setAttribute('id',beeID);
     bee.setAttribute('x',0);
     bee.setAttribute('y',0);
     bee.setAttribute('width',16);
     bee.setAttribute('height',16);
     bee.setAttribute('fill','#0D47A1');
     bee.setAttribute('transform','translate(-8,-8)');
+    bee.setAttribute('style','offset-path: path('+path.d+')');
 
     var beeMotion = document.createElementNS(svg,'animateMotion');
     beeMotion.setAttribute('dur',animDuration);
@@ -108,13 +85,12 @@ $(document).ready(function(){
     console.log(bee);
     beeContainer2.appendChild(bee);
 
-
-    const beeID = $('#js-bee--'+i);
+    // push bee ID into an array for later looping
     bees.push(beeID);
   }
 
-  // for some reason the bees dont show untill the entire group is wiped and re-added - probably something
-  // to do with their already being an animation in progress??? nope - im using the wrong method of adding elements to SVG
+  // for some reason the animation will not start unless I
+  // wipe the group and re add all the elements????
   cloneContainer = beeContainer.html();
   beeContainer.html('');
   beeContainer.html(cloneContainer);
@@ -122,104 +98,64 @@ $(document).ready(function(){
 
 
 function createBeeDot() {
-  const bee = $('#js-bee--0');
-  //const beetop = bee.offset().top;
-  var parentPos = beeSvg.offset();
-  var dot = {
-    top: bee.offset().top - parentPos.top,
-    left: bee.offset().left - parentPos.left,
-    alpha: 1
+  // for each bee...
+
+  const beeCount = bees.length;
+  //console.log(beeCount);
+  // place a bee on each path, random location and start point
+  for (i = 0; i < beeCount; i++) {
+    const beeID = bees[i];
+    const bee = $('#'+beeID);
+
+    var parentPos = beeSvg.offset();
+    var dot = {
+      top: bee.offset().top - parentPos.top,
+      left: bee.offset().left - parentPos.left,
+      alpha: 1
+    }
+
+    bee.attr({
+      'fill':'#f00f00'
+    });
+
+    dotContainer = document.querySelector('.js-bee-trails');
+    var svg = "http://www.w3.org/2000/svg";
+    var circle = document.createElementNS('http://www.w3.org/2000/svg','circle');
+    circle.setAttribute('cx',dot.left+10);
+    circle.setAttribute('cy',dot.top+10);
+    circle.setAttribute('r',2);
+    circle.setAttribute('fill','#ffffff');
+    circle.setAttribute('class','bee-dot');
+
+    dotContainer.appendChild(circle);
+    //replace with on animation end to remove
+    setTimeout(function(){
+      //dotContainer.removeChild(circle);
+    },4000);
+
+    //circle.on
+
+
+    // circle.one("webkitAnimationEnd oanimationend msAnimationEnd animationend",function(e){
+    //   this.remove();
+    //   console.log('remove');
+    // });
+
   }
-
-  // this is being called far too frequently
-  //console.log(dot);
-  //dotArray.push(dot)
-
-
-  bee.attr({
-    'fill':'#f00f00'
-  });
-
-  dotContainer = document.querySelector('.js-bee-trails');
-  var svg = "http://www.w3.org/2000/svg";
-  var circle = document.createElementNS('http://www.w3.org/2000/svg','circle');
-  circle.setAttribute('cx',dot.left+8);
-  circle.setAttribute('cy',dot.top+8);
-  circle.setAttribute('r',4);
-  circle.setAttribute('fill','#ffffff');
-  circle.setAttribute('class','bee-dot');
-
-
-  dotContainer.appendChild(circle);
-
-  setTimeout(function(){
-    circle.remove();
-  },2000);
 }
 
 
 // --------------------
-// Canvas Functions
-
-function canvasInitalize() {
-  // Setup
-  beeCanvas.id = $('.js-bee-canvas');
-  beeCanvas.ctx = beeCanvas.id[0].getContext("2d");
-  beeCanvas.width = beeCanvas.id.parent().width();
-  beeCanvas.height = beeCanvas.id.parent().height();
-  // set attributes on element
-  beeCanvas.id.attr({
-    'width': beeCanvas.width,
-    'height': beeCanvas.height
-  });
-}
-
+// Repeat functions
 
 let increment = 0;
 
-function canvasAnimate() {
-  // Clear all
-  requestAnimationFrame(canvasAnimate);
-  clearCanvas(beeCanvas);
-
-  let context = beeCanvas.ctx;
-  let dotCount = dotArray.length;
-
-  //console.log(dotCount);
-
-  // place a bee on each path, random location and start point
-  for (i = 0; i < dotCount; i++) {
-    //var dot = dotArray[i];
-
-    // var svg = "http://www.w3.org/2000/svg";
-    // var circle = document.createElementNS('http://www.w3.org/2000/svg','circle');
-    // circle.setAttribute('cx',dot.left);
-    // circle.setAttribute('cy',dot.top+80);
-    // circle.setAttribute('r',4);
-    // circle.setAttribute('fill',''#ffffff');
-    //
-    // //var dotHtml = '<circle cx="'+dot.left+'" cy="'+dot.top-80+'" r="4" fill="#ffffff"/>';
-    // dotContainer.appendChild(circle);
-
-    //console.log(dot.alpha);
-    // fade out over X frames (60fps);
-    // fade out over 120frames = 1 -> 0 in 120 frames
-    // 1/120 = 0.00833333333;
-    // if (dot.alpha <= 0.05) {
-    //   dotArray.splice(i,0);
-    // } else {
-    //   dot.alpha -= 0.005;
-    //   context.beginPath();
-    //   context.fillRect(dot.left+8, dot.top-80+8, 10, 10);
-    //   context.closePath();
-    //   context.fillStyle = 'rgba(0,0,0,'+dot.alpha+')';
-    // }
-  }
+function animate() {
+  requestAnimationFrame(animate);
 
   increment++;
-  if (increment >= 60) {
+  if (increment >= 30) {
     createBeeDot();
-    //console.log('DOT');
     increment = 0;
   }
 }
@@ -257,22 +193,3 @@ function canvasAnimate() {
             clearTimeout(id);
         };
 }());
-
-// Clear canvas function
-function clearCanvas(canvas) {
-    canvas.ctx.clearRect(0, 0, canvas.width, canvas.height);
-}
-
-// Resize delay function
-var waitForFinalEvent = (function () {
-  var timers = {};
-  return function (callback, ms, uniqueId) {
-    if (!uniqueId) {
-      uniqueId = "Don't call this twice without a uniqueId";
-    }
-    if (timers[uniqueId]) {
-      clearTimeout(timers[uniqueId]);
-    }
-    timers[uniqueId] = setTimeout(callback, ms);
-  };
-})();

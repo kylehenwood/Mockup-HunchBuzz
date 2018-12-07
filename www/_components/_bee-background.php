@@ -1,6 +1,5 @@
 
 <div class="banner-bee">
-<canvas class="banner-bee__canvas js-bee-canvas"></canvas>
 <div class="banner-bee__before"></div>
 <div class="banner-bee__after"></div>
 
@@ -15,17 +14,8 @@
     <path class="js-bee-path" id="bee--6" stroke-opacity="0.2" stroke="#FFFFFF" stroke-width="0" d="M1392,728 C1487.15468,201.378566 1290.64956,60.5284047 802.484641,305.449518 C423.630302,495.527548 254.802089,396.377709 296,8"></path>
   </g>
 
-  <g class="js-bee-container">
-    <rect class="js-bee-clone" x="0" y="0" width="16" height="16" fill="#0D47A1" transform="translate(-8,-8)">
-      <animateMotion dur="20s" begin="-10s" from="2000" repeatCount="indefinite" rotate="auto">
-        <mpath xlink:href="#bee--6"></mpath>
-      </animateMotion>
-    </rect>
-  </g>
-
-  <g class="js-bee-trails">
-    <circle cx="50" cy="50" r="4" fill="#ffffff" fill="red" />
-  </g>
+  <g class="js-bee-container"></g>
+  <g class="js-bee-trails"></g>
 
 </svg>
 
