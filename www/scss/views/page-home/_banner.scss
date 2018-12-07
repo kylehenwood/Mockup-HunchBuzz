@@ -7,6 +7,7 @@
     content: '';
     display: block;
     position: absolute;
+    z-index: 5;
     left: 0;
     bottom: 0;
     height: 240px;
@@ -22,7 +23,7 @@
 }
 .home-banner__content {
   position: relative;
-  z-index: 5;
+  z-index: 10;
   margin: 0 0 56px;
 }
 .home-banner__title {
@@ -66,17 +67,11 @@
 .home-banner__mockup {
   position: relative;
   overflow: hidden;
-  z-index: 5;
+  z-index: 10;
   margin: 0 auto;
   max-width: 800px;
   border-radius: 8px;
   box-shadow: $shadow-500;
-  // &:before {
-  //   content: '';
-  //   display: block;
-  //   background: $color-grey-700;
-  //   height: 16px;
-  // }
 }
 
 .home-banner__pulse {

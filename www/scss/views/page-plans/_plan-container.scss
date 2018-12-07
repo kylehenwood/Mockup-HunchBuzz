@@ -1,6 +1,7 @@
 // Plans container
 .plans-container {
   position: relative;
+  z-index: 5;
   margin: -200px 0 0;
   background: white;
   border-radius: 8px 8px 0 0;

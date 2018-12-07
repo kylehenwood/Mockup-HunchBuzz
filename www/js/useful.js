@@ -53,3 +53,11 @@ var animationEvent = whichAnimationEvent();
 //     // Do something when the animation ends
 //   });
 // });
+
+
+
+// random function - no really
+function rand(min,max) {
+    var num = Math.random() * (max - min) + min;
+    return Math.ceil(num-1);
+}

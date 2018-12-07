@@ -3,6 +3,8 @@
 // ---
 
 .hiw-container {
+  position: relative;
+  z-index: 5;
   margin: -200px 0 0;
   @include screen-med {
     margin: 0;

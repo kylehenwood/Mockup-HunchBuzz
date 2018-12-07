@@ -1,5 +1,6 @@
 <!-- Banner -->
 <div class="layout__banner">
+	<?php include './_components/_bee-background.php';?>
 	<div class="banner-hexagon banner-hexagon--1 js-parralax" data-modifier="16"></div>
 	<div class="banner-hexagon banner-hexagon--2 js-parralax" data-modifier="4"></div>
 	<div class="banner-hexagon banner-hexagon--3 js-parralax" data-modifier="18"></div>
