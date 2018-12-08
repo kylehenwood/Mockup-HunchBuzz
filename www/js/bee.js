@@ -12,21 +12,20 @@
 
 const beeSpeedMin = 24;
 const beeSpeedMax = 44;
+const trailFrequency = 30; // 60 frames per second
 
 var dotArray = [];  // dots that appear behind each bee are pushed to this array
 
 var beeSvg;
 var beeContainer;
-var dotContainer;
+
 var beePaths;
 var beePathArray = [];
-var bees = [];
 
 $(document).ready(function(){
   beeSvg = $('.js-bee-svg');
   beePaths = $('.js-bee-path');
-  beeContainer = $('.js-bee-container');
-  dotContainer = $('.js-bee-trails');
+  beeContainer = document.querySelector('.js-bee-container');
   beePaths.each(function(){
     var elem = $(this);
     var path = {
@@ -37,7 +36,6 @@ $(document).ready(function(){
     }
     beePathArray.push(path);
   });
-
   // ---
   // Start looping
   animate();
@@ -55,7 +53,6 @@ $(document).ready(function(){
     path = beePathArray[i];
 
     //var beeContainer2 = document.querySelector('.js-bee-container');
-    var beeContainer2 = document.querySelector('.js-bee-banner');
     var animDuration = rand(beeSpeedMin,beeSpeedMax);
     var randStart = rand(1,10);
     var animStart = -animDuration*(randStart/10);
@@ -64,122 +61,63 @@ $(document).ready(function(){
 
     var svg = "http://www.w3.org/2000/svg";
     var bee = document.createElement('div');
-    bee.setAttribute('id',beeID);
     bee.setAttribute('class','bee-motion');
-    bee.setAttribute('x',0);
-    bee.setAttribute('y',0);
-    bee.setAttribute('width',16);
-    bee.setAttribute('height',16);
-    bee.setAttribute('fill','#0D47A1');
-    bee.setAttribute('transform','translate(-8,-8)');
-    bee.setAttribute('style','offset-path: path("'+path.d+'")');
+    bee.setAttribute('transform','translate(-10,-10)');
+    bee.setAttribute('style','offset-path: path("'+path.d+'"); animation-delay:'+animStart+'s; animation-duration:'+animDuration+'s;');
 
-    var beeMotion = document.createElementNS(svg,'animateMotion');
-    beeMotion.setAttribute('dur',animDuration);
-    beeMotion.setAttribute('begin',animStart);
-    beeMotion.setAttribute('repeatCount','indefinite');
-    beeMotion.setAttribute('rotate','auto');
-
-    var beeMpath = document.createElementNS(svg,'mpath');
-    beeMpath.setAttribute('xlink:href','#'+path.id);
+    var beeBody = document.createElement('div');
+    beeBody.setAttribute('class','bee-buzz');
 
     // add children to bee container
-    //bee.appendChild(beeMotion);
-    //beeMotion.appendChild(beeMpath);
+    bee.appendChild(beeBody);
 
     //console.log(bee);
-    beeContainer2.appendChild(bee);
-
-    // push bee ID into an array for later looping
-    bees.push(beeID);
+    beeContainer.appendChild(bee);
   }
-
-  // for some reason the animation will not start unless I
-  // wipe the group and re add all the elements????
-  cloneContainer = beeContainer.html();
-  beeContainer.html('');
-  beeContainer.html(cloneContainer);
 });
 
 
 function createBeeDot() {
   // for each bee...
 
-  const beeCount = bees.length;
   //console.log(beeCount);
   // place a bee on each path, random location and start point
   $('.bee-motion').each(function(){
     //const beeID = bees[i];
     const bee = $(this);
-
+    const trail = {
+      radius: 2,
+      bee: 20,
+      offset: (20-2)/2
+    };
     var parentPos = beeSvg.offset();
     var dot = {
-      top: bee.offset().top - parentPos.top+7,
-      left: bee.offset().left - parentPos.left+7,
+      top: bee.offset().top - parentPos.top+trail.offset,
+      left: bee.offset().left - parentPos.left+trail.offset,
       alpha: 1
     }
 
     dotContainer = document.querySelector('.js-bee-banner');
-    var svg = "http://www.w3.org/2000/svg";
     var circle = document.createElement('div');
-    // circle.css({
-    //   'top':dot.top,
-    //   'left':dot.left
-    // });
     circle.setAttribute('style','top:'+dot.top+'px; left:'+dot.left+'px;');
-    circle.setAttribute('r',2);
+    circle.setAttribute('r',dot.radius);
     circle.setAttribute('fill','#ffffff');
     circle.setAttribute('class','bee-dot');
-    dotContainer.appendChild(circle);
-    //replace with on animation end to remove
+
+    circle.addEventListener(animationEvent,function(event){
+      circle.remove();
+      //console.log('remove');
+    });
+
+    beeContainer.appendChild(circle);
+
+
+    //replace with on animation end to remove... if it will ever work
     setTimeout(function(){
       circle.remove();
     },4000);
   });
-    //
-    //
-    //
-    //
-    // const beeID = bees[i];
-    // const bee = $('#'+beeID);
-    //
-    // var parentPos = beeSvg.offset();
-    // var dot = {
-    //   top: bee.offset().top - parentPos.top,
-    //   left: bee.offset().left - parentPos.left,
-    //   alpha: 1
-    // }
-    //
-    // bee.attr({
-    //   'fill':'#f00f00'
-    // });
-    //
-    // dotContainer = document.querySelector('.js-bee-trails');
-    // var svg = "http://www.w3.org/2000/svg";
-    // var circle = document.createElementNS('http://www.w3.org/2000/svg','circle');
-    // circle.setAttribute('cx',dot.left+10);
-    // circle.setAttribute('cy',dot.top+10);
-    // circle.setAttribute('r',2);
-    // circle.setAttribute('fill','#ffffff');
-    // circle.setAttribute('class','bee-dot');
-    //
-    // dotContainer.appendChild(circle);
-    // //replace with on animation end to remove
-    // setTimeout(function(){
-    //   //dotContainer.removeChild(circle);
-    // },4000);
-
-    //circle.on
-
-
-    // circle.one("webkitAnimationEnd oanimationend msAnimationEnd animationend",function(e){
-    //   this.remove();
-    //   console.log('remove');
-    // });
-
-  //}
 }
-
 
 // --------------------
 // Repeat functions
@@ -190,7 +128,7 @@ function animate() {
   requestAnimationFrame(animate);
 
   increment++;
-  if (increment >= 30) {
+  if (increment >= trailFrequency) {
     createBeeDot();
     increment = 0;
   }

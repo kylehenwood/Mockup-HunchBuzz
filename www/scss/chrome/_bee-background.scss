@@ -1,9 +1,10 @@
 .banner-bee {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  left: 50%;
+  width: 1600px;
+  height: 733px;
+  transform: translateX(-50%);
   overflow: hidden;
 }
 .banner-bee__before,
@@ -26,21 +27,16 @@
 
 .banner-bee__svg {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 0;
-  width: 1600px;
-  left: 50%;
-  //height: 100%;
-  transform: translateX(-50%);
 }
 
 .banner-bee__container {
   position: relative;
   z-index: 0;
   width: 1600px;
-  //left: 50%;
-  //height: 100%;
-  margin: 0 auto;
-  //transform: translateX(-50%);
+  height: 100%;
 }
 
 
@@ -48,14 +44,16 @@
 //----
 
 .bee-motion {
+  position: absolute;
+  top: 0;
+  left: 0;
   offset-distance: 20%;
   width: 20px;
   height: 20px;
   border-radius: 4px;
   background: red;
-
   animation-name: bee-motion;
-  animation-duration: 20s;
+  //animation-duration: 20s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -67,6 +65,30 @@
   100% {
     offset-distance: 100%;
   }
+}
+.bee-buzz {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  transform: rotate(90deg);
+}
+.bee-buzz:before,
+.bee-buzz:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 6px;
+  background: rgba(white,0.4);
+  width: 10px;
+  height: 8px;
+}
+.bee-buzz:before {
+  left: -10px;
+}
+.bee-buzz:after {
+  right: -10px;
 }
 
 // --
