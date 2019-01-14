@@ -1,6 +1,6 @@
 <div class="layout__banner">
   <?php include './_components/_bee-background.php';?>
-    <div class="home-banner" style="opacity:0;pointer-events:none;">
+    <div class="home-banner">
 
       <div class="home-banner__content">
         <div class="home-banner__title anim--in-bot anim--delay">Idea Management Software.</div>

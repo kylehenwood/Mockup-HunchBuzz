@@ -980,8 +980,7 @@ html {
   offset-distance: 20%;
   width: 20px;
   height: 20px;
-  border-radius: 4px;
-  background: red;
+  padding: 4px;
   animation-name: bee-motion;
   animation-timing-function: linear;
   animation-iteration-count: infinite; }
@@ -994,16 +993,16 @@ html {
 
 .bee-buzz {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background: white;
+  background: #0D47A1;
   transform: rotate(90deg); }
 
 .bee-buzz:before,
 .bee-buzz:after {
   content: '';
-  display: block;
+  display: none;
   position: absolute;
   top: 6px;
   background: rgba(255, 255, 255, 0.4);
@@ -1045,7 +1044,7 @@ html {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: white;
+  background: #0D47A1;
   animation-name: bee-trail;
   animation-duration: 4s;
   animation-timing-function: ease-out;
