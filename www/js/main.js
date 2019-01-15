@@ -6,9 +6,7 @@ $(document).ready(function(){
   smoothScroll();
   planExpand();
   navigationSelected();
-
   ScrollReveal().reveal('.quote-card');
-
 });
 
 // mobile navigation
@@ -20,15 +18,22 @@ function mobileNavigation() {
     navigation.toggle();
   });
 
-  $(document).on('click',function(e){
-    if(navigation.visible) {
-      navigation.hide();
-    }
-  });
+  // $(document).on('click',function(e){
+  //   if(navigationOpen === true) {
+  //     navigation.hide();
+  //   }
+  // });
+  //
+  // $(document).scroll(function(e){
+  //   if(navigationOpen === true) {
+  //     navigation.hide();
+  //   }
+  // });
 
   navigation.click(function(e){
     e.stopPropagation();
   });
+
 }
 
 // Pricing page plan expands
